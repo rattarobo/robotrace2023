@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<boardInfo>
+    <system>
+        <item id="debugIF" value="unused"/>
+    </system>
+    <pin>
+        <function comments="" group="" id="P01" pin="5"/>
+        <function comments="" group="" id="XTAL" pin="7"/>
+        <function comments="" group="" id="EXTAL" pin="9"/>
+        <function comments="" group="" id="PE2" pin="11"/>
+        <function comments="" group="" id="PD4" pin="15"/>
+        <function comments="" group="" id="PB4" pin="19"/>
+        <function comments="" group="" id="P94" pin="28"/>
+        <function comments="" group="" id="P93" pin="29"/>
+        <function comments="" group="" id="P91" pin="31"/>
+        <function comments="" group="" id="P90" pin="32"/>
+        <function comments="" group="" id="P76" pin="33"/>
+        <function comments="" group="" id="P75" pin="34"/>
+        <function comments="" group="" id="P74" pin="35"/>
+        <function comments="" group="" id="P73" pin="36"/>
+        <function comments="" group="" id="P72" pin="37"/>
+        <function comments="" group="" id="P71" pin="38"/>
+        <function comments="" group="" id="P11" pin="64"/>
+    </pin>
+    <clock>
+        <item id="vccinput" value="5"/>
+        <item id="mainclockenable" value="check"/>
+        <item id="mainsourcebox" value="srcR"/>
+        <item id="mainfrequency" value="16"/>
+        <item id="mainwaittime" value="9980"/>
+        <item id="hococlockenable" value="uncheck"/>
+        <item id="hocooscenable" value="uncheck"/>
+        <item id="hocofrequency" value="frq16"/>
+        <item id="lococlockenable" value="uncheck"/>
+        <item id="locofrequency" value="240"/>
+        <item id="iwdtclockenable" value="uncheck"/>
+        <item id="iwdtfrequency" value="120"/>
+        <item id="pllswitcher" value="pllmain"/>
+        <item id="plldivider" value="div1-1"/>
+        <item id="pllmul" value="mul10-1"/>
+        <item id="sckswitcher" value="pll"/>
+        <item id="fclkdivider" value="comboBox1-4"/>
+        <item id="iclkdivider" value="comboBox1-1"/>
+        <item id="pclkadivider" value="comboBox1-2"/>
+        <item id="pclkbdivider" value="comboBox1-4"/>
+        <item id="pclkcdivider" value="comboBox1-1"/>
+        <item id="pclkddivider" value="comboBox1-4"/>
+        <item id="avccinput" value="5"/>
+        <item id="an000" value="check"/>
+        <item id="an001" value="check"/>
+        <item id="an002" value="check"/>
+        <item id="pgavss0" value="check"/>
+        <item id="an100" value="check"/>
+        <item id="an101" value="check"/>
+        <item id="an102" value="check"/>
+        <item id="pgavss1" value="check"/>
+    </clock>
+    <board display="config_CMT" html="" id="config_CMT" partNumber="R5F566TEAxFM"/>
+    <info version=""/>
+</boardInfo>

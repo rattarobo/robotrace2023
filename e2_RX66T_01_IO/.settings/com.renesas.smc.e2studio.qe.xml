@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<QE>
+    <Segment id="Project">
+        <Setting id="SrcGeneratedPath" value="src/smc_gen"/>
+    </Segment>
+    <Segment id="Pin">
+        <Setting id="PD4" value="PD4"/>
+        <Setting id="PB4" value="PB4"/>
+        <Setting id="P72" value="P72"/>
+        <Setting id="P71" value="P71"/>
+        <Setting id="P74" value="P74"/>
+        <Setting id="P73" value="P73"/>
+        <Setting id="P76" value="P76"/>
+        <Setting id="P75" value="P75"/>
+        <Setting id="P01" value="P01"/>
+        <Setting id="P11" value="P11"/>
+        <Setting id="P36" value="EXTAL"/>
+        <Setting id="P37" value="XTAL"/>
+        <Setting id="PE2" value="PE2"/>
+    </Segment>
+    <Segment id="Device">
+        <Setting id="Series" value="RX600"/>
+        <Setting id="Group" value="RX66T"/>
+        <Setting id="Board" value="カスタムユーザボード"/>
+        <Setting id="PartNo" value="R5F566TEAxFM"/>
+        <Setting id="PinCount" value="64"/>
+    </Segment>
+    <Segment id="Clock">
+        <Setting id="PCLKD" value="40000.0"/>
+        <Setting id="CacMCLK" value="8000.0"/>
+        <Setting id="PLLCLK" value="160000.0"/>
+        <Setting id="PCLKB" value="40000.0"/>
+        <Setting id="VCC" value="5.0"/>
+        <Setting id="PCLKC" value="160000.0"/>
+        <Setting id="PCLKA" value="80000.0"/>
+        <Setting id="ICLK" value="160000.0"/>
+        <Setting id="FCLK" value="40000.0"/>
+        <Setting id="SysCLKSrc" value="4.0"/>
+        <Setting id="ExtCLK" value="8000.0"/>
+    </Segment>
+    <Segment id="Component">
+        <Setting id="r_bsp" value="FIT"/>
+        <Setting id="Config_PORT" value="CG"/>
+    </Segment>
+</QE>
