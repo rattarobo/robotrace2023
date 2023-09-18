@@ -865,7 +865,7 @@
             <Setting id="ANx02DSHchk" value="Unuse"/>
             <Setting id="ANx07_CMPALEVEL" value="Ref0Larger"/>
             <Setting id="S12ADIPrity" value="Level15"/>
-            <Setting id="ANx00_Sampling" value="1"/>
+            <Setting id="ANx00_Sampling" value="2"/>
             <Setting id="Cmp1B" value="0"/>
             <Setting id="Cmp1A" value="0"/>
             <Setting id="S12CMPAIchk" value="Use"/>
@@ -873,7 +873,7 @@
             <Setting id="ANx01_Add" value="Use"/>
             <Setting id="WindowABcomplex" value="AORB"/>
             <Setting id="S12CMPBIchk" value="Use"/>
-            <Setting id="ANx01_Sampling" value="1"/>
+            <Setting id="ANx01_Sampling" value="2"/>
             <Setting id="ANx02_CMPA" value="Unuse"/>
             <Setting id="DataAligh" value="Right"/>
             <Setting id="ANx00_Add" value="Use"/>
@@ -882,13 +882,13 @@
             <Setting id="ANx02_Add" value="Use"/>
             <Setting id="Cmp0A" value="0"/>
             <Setting id="Cmp0B" value="0"/>
-            <Setting id="ANx07_Sampling" value="1"/>
+            <Setting id="ANx07_Sampling" value="2"/>
             <Setting id="DoubleTriggermode" value="Unuse"/>
-            <Setting id="ANx02_Sampling" value="1"/>
+            <Setting id="ANx02_Sampling" value="2"/>
             <Setting id="ELCCondition" value="AllScan"/>
             <Setting id="CMPAChk" value="Unuse"/>
             <Setting id="ADSTpin" value="Unuse"/>
-            <Setting id="Autoclean" value="DisAutoclean"/>
+            <Setting id="Autoclean" value="EnAutoclean"/>
             <Setting id="ANx07_Add" value="Use"/>
             <Setting id="WDFuntion" value="WDFUnuse"/>
             <Setting id="DDcharge" value="Unused"/>
@@ -925,7 +925,7 @@
             <Setting id="ANx02DSHchk" value="Unuse"/>
             <Setting id="ANx07_CMPALEVEL" value="Ref0Larger"/>
             <Setting id="S12ADIPrity" value="Level15"/>
-            <Setting id="ANx00_Sampling" value="1"/>
+            <Setting id="ANx00_Sampling" value="2"/>
             <Setting id="Cmp1B" value="0"/>
             <Setting id="Cmp1A" value="0"/>
             <Setting id="S12CMPAIchk" value="Use"/>
@@ -933,7 +933,7 @@
             <Setting id="ANx01_Add" value="Use"/>
             <Setting id="WindowABcomplex" value="AORB"/>
             <Setting id="S12CMPBIchk" value="Use"/>
-            <Setting id="ANx01_Sampling" value="1"/>
+            <Setting id="ANx01_Sampling" value="2"/>
             <Setting id="ANx02_CMPA" value="Unuse"/>
             <Setting id="DataAligh" value="Right"/>
             <Setting id="ANx00_Add" value="Use"/>
@@ -942,13 +942,13 @@
             <Setting id="ANx02_Add" value="Use"/>
             <Setting id="Cmp0A" value="0"/>
             <Setting id="Cmp0B" value="0"/>
-            <Setting id="ANx07_Sampling" value="1"/>
+            <Setting id="ANx07_Sampling" value="2"/>
             <Setting id="DoubleTriggermode" value="Unuse"/>
-            <Setting id="ANx02_Sampling" value="1"/>
+            <Setting id="ANx02_Sampling" value="2"/>
             <Setting id="ELCCondition" value="AllScan"/>
             <Setting id="CMPAChk" value="Unuse"/>
             <Setting id="ADSTpin" value="Unuse"/>
-            <Setting id="Autoclean" value="DisAutoclean"/>
+            <Setting id="Autoclean" value="EnAutoclean"/>
             <Setting id="ANx07_Add" value="Use"/>
             <Setting id="WDFuntion" value="WDFUnuse"/>
             <Setting id="DDcharge" value="Unused"/>
@@ -980,7 +980,7 @@
             <Setting id="ANx17_Add" value="Use"/>
             <Setting id="ANx11_Sampling" value="0.675"/>
             <Setting id="S12ADIPrity" value="Level15"/>
-            <Setting id="ANx00_Sampling" value="1"/>
+            <Setting id="ANx00_Sampling" value="2"/>
             <Setting id="Cmp1B" value="0"/>
             <Setting id="Cmp1A" value="0"/>
             <Setting id="S12CMPAIchk" value="Use"/>
@@ -990,9 +990,9 @@
             <Setting id="ANx01_Add" value="Use"/>
             <Setting id="Temperature" value="Unuse"/>
             <Setting id="WindowABcomplex" value="AORB"/>
-            <Setting id="ANLarger_Sampling" value="1"/>
+            <Setting id="ANLarger_Sampling" value="2"/>
             <Setting id="S12CMPBIchk" value="Use"/>
-            <Setting id="ANx01_Sampling" value="1"/>
+            <Setting id="ANx01_Sampling" value="2"/>
             <Setting id="ANx02_CMPA" value="Unuse"/>
             <Setting id="DataAligh" value="Right"/>
             <Setting id="ANx00_Add" value="Use"/>
@@ -1007,7 +1007,7 @@
             <Setting id="ANx17_CMPA" value="Unuse"/>
             <Setting id="Cmp0B" value="0"/>
             <Setting id="DoubleTriggermode" value="Unuse"/>
-            <Setting id="ANx02_Sampling" value="1"/>
+            <Setting id="ANx02_Sampling" value="2"/>
             <Setting id="ELCCondition" value="AllScan"/>
             <Setting id="CMPAChk" value="Unuse"/>
             <Setting id="ANx17" value="Use"/>
@@ -1020,7 +1020,7 @@
             <Setting id="ANx10" value="Unuse"/>
             <Setting id="Temperature_Add" value="Unuse"/>
             <Setting id="Internal_Sampling" value="4.05"/>
-            <Setting id="Autoclean" value="DisAutoclean"/>
+            <Setting id="Autoclean" value="EnAutoclean"/>
             <Setting id="WDFuntion" value="WDFUnuse"/>
             <Setting id="ANx16_CMPA" value="Unuse"/>
             <Setting id="ANx11_CMPALEVEL" value="Ref0Larger"/>

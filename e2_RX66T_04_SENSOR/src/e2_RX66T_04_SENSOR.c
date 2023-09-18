@@ -36,7 +36,7 @@ void main(void)
 	R_Config_SCI1_Start();
 	/* Enable DMAC0 operation */
 	R_Config_DMAC0_Start();
-
+	R_Config_DMAC1_Start();
 
 
 	/*エラーの初期化*/

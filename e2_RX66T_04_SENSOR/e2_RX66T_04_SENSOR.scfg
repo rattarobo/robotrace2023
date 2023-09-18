@@ -399,11 +399,11 @@
     <tool id="Pins" version="1.0.1.0">
         <pinItem allocation="7" comments="" direction="None" id="XTAL" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
         <pinItem allocation="9" comments="" direction="None" id="EXTAL" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
-        <pinItem allocation="5" comments="" direction="None" id="P01" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
-        <pinItem allocation="64" comments="" direction="None" id="P11" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
-        <pinItem allocation="19" comments="" direction="None" id="PB4" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
-        <pinItem allocation="15" comments="" direction="None" id="PD4" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
-        <pinItem allocation="11" comments="" direction="None" id="PE2" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
+        <pinItem allocation="5" comments="" direction="O" id="P01" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
+        <pinItem allocation="64" comments="" direction="O" id="P11" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
+        <pinItem allocation="19" comments="" direction="O" id="PB4" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
+        <pinItem allocation="15" comments="" direction="O" id="PD4" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
+        <pinItem allocation="11" comments="" direction="I" id="PE2" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
         <pinItem allocation="30" comments="" direction="None" id="GTIOC4B" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
         <pinItem allocation="27" comments="" direction="None" id="GTIOC4A" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
         <pinItem allocation="55" comments="" direction="None" id="AN107" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
@@ -411,12 +411,12 @@
         <pinItem allocation="54" comments="" direction="None" id="AN100" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
         <pinItem allocation="53" comments="" direction="None" id="AN101" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
         <pinItem allocation="52" comments="" direction="None" id="AN102" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
-        <pinItem allocation="37" comments="" direction="None" id="P72" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
-        <pinItem allocation="38" comments="" direction="None" id="P71" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
-        <pinItem allocation="35" comments="" direction="None" id="P74" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
-        <pinItem allocation="36" comments="" direction="None" id="P73" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
-        <pinItem allocation="33" comments="" direction="None" id="P76" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
-        <pinItem allocation="34" comments="" direction="None" id="P75" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
+        <pinItem allocation="37" comments="" direction="O" id="P72" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
+        <pinItem allocation="38" comments="" direction="O" id="P71" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
+        <pinItem allocation="35" comments="" direction="O" id="P74" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
+        <pinItem allocation="36" comments="" direction="O" id="P73" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
+        <pinItem allocation="33" comments="" direction="O" id="P76" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
+        <pinItem allocation="34" comments="" direction="O" id="P75" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
         <pinItem allocation="44" comments="" direction="None" id="AN216" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
         <pinItem allocation="43" comments="" direction="None" id="AN217" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
         <pinItem allocation="17" comments="" direction="None" id="GTIOC2A" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
@@ -426,10 +426,10 @@
         <pinItem allocation="56" comments="" direction="None" id="AN002" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
         <pinItem allocation="13" comments="" direction="None" id="GTIOC3B" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
         <pinItem allocation="12" comments="" direction="None" id="GTIOC3A" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
-        <pinItem allocation="32" comments="" direction="None" id="P90" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
-        <pinItem allocation="31" comments="" direction="None" id="P91" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
-        <pinItem allocation="28" comments="" direction="None" id="P94" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
-        <pinItem allocation="29" comments="" direction="None" id="P93" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
+        <pinItem allocation="32" comments="" direction="O" id="P90" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
+        <pinItem allocation="31" comments="" direction="O" id="P91" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
+        <pinItem allocation="28" comments="" direction="O" id="P94" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
+        <pinItem allocation="29" comments="" direction="O" id="P93" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
         <pinItem allocation="18" comments="" direction="None" id="GTIOC2B" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
         <pinItem allocation="21" comments="" direction="None" id="MTIOC0B" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
         <pinItem allocation="16" comments="" direction="None" id="TXD1" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
@@ -7308,7 +7308,7 @@
                     <item id="Right" input="" vlaue="0"/>
                     <item id="Left" input="" vlaue="0"/>
                 </option>
-                <option enabled="true" id="Autoclean" selection="DisAutoclean">
+                <option enabled="true" id="Autoclean" selection="EnAutoclean">
                     <item id="DisAutoclean" input="" vlaue="0"/>
                     <item id="EnAutoclean" input="" vlaue="0"/>
                 </option>
@@ -7409,16 +7409,16 @@
                     <item id="DSH_Sampling" input="0.675" vlaue="41"/>
                 </option>
                 <option enabled="true" id="ANx00_Sampling" selection="ANx00_Sampling">
-                    <item id="ANx00_Sampling" input="1" vlaue="60"/>
+                    <item id="ANx00_Sampling" input="2" vlaue="120"/>
                 </option>
                 <option enabled="true" id="ANx01_Sampling" selection="ANx01_Sampling">
-                    <item id="ANx01_Sampling" input="1" vlaue="60"/>
+                    <item id="ANx01_Sampling" input="2" vlaue="120"/>
                 </option>
                 <option enabled="true" id="ANx02_Sampling" selection="ANx02_Sampling">
-                    <item id="ANx02_Sampling" input="1" vlaue="60"/>
+                    <item id="ANx02_Sampling" input="2" vlaue="120"/>
                 </option>
                 <option enabled="true" id="ANx07_Sampling" selection="ANx07_Sampling">
-                    <item id="ANx07_Sampling" input="1" vlaue="60"/>
+                    <item id="ANx07_Sampling" input="2" vlaue="120"/>
                 </option>
                 <option enabled="true" id="ADSTpin" selection="Unuse">
                     <item id="Use" input="" vlaue="0"/>
@@ -7698,7 +7698,7 @@
                     <item id="Right" input="" vlaue="0"/>
                     <item id="Left" input="" vlaue="0"/>
                 </option>
-                <option enabled="true" id="Autoclean" selection="DisAutoclean">
+                <option enabled="true" id="Autoclean" selection="EnAutoclean">
                     <item id="DisAutoclean" input="" vlaue="0"/>
                     <item id="EnAutoclean" input="" vlaue="0"/>
                 </option>
@@ -7799,16 +7799,16 @@
                     <item id="DSH_Sampling" input="0.675" vlaue="41"/>
                 </option>
                 <option enabled="true" id="ANx00_Sampling" selection="ANx00_Sampling">
-                    <item id="ANx00_Sampling" input="1" vlaue="60"/>
+                    <item id="ANx00_Sampling" input="2" vlaue="120"/>
                 </option>
                 <option enabled="true" id="ANx01_Sampling" selection="ANx01_Sampling">
-                    <item id="ANx01_Sampling" input="1" vlaue="60"/>
+                    <item id="ANx01_Sampling" input="2" vlaue="120"/>
                 </option>
                 <option enabled="true" id="ANx02_Sampling" selection="ANx02_Sampling">
-                    <item id="ANx02_Sampling" input="1" vlaue="60"/>
+                    <item id="ANx02_Sampling" input="2" vlaue="120"/>
                 </option>
                 <option enabled="true" id="ANx07_Sampling" selection="ANx07_Sampling">
-                    <item id="ANx07_Sampling" input="1" vlaue="60"/>
+                    <item id="ANx07_Sampling" input="2" vlaue="120"/>
                 </option>
                 <option enabled="true" id="ADSTpin" selection="Unuse">
                     <item id="Use" input="" vlaue="0"/>
@@ -8025,7 +8025,7 @@
                     <item id="Right" input="" vlaue="0"/>
                     <item id="Left" input="" vlaue="0"/>
                 </option>
-                <option enabled="true" id="Autoclean" selection="DisAutoclean">
+                <option enabled="true" id="Autoclean" selection="EnAutoclean">
                     <item id="DisAutoclean" input="" vlaue="0"/>
                     <item id="EnAutoclean" input="" vlaue="0"/>
                 </option>
@@ -8178,13 +8178,13 @@
                     <item id="BetweenRef0Ref1" input="" vlaue="0"/>
                 </option>
                 <option enabled="true" id="ANx00_Sampling" selection="ANx00_Sampling">
-                    <item id="ANx00_Sampling" input="1" vlaue="60"/>
+                    <item id="ANx00_Sampling" input="2" vlaue="120"/>
                 </option>
                 <option enabled="true" id="ANx01_Sampling" selection="ANx01_Sampling">
-                    <item id="ANx01_Sampling" input="1" vlaue="60"/>
+                    <item id="ANx01_Sampling" input="2" vlaue="120"/>
                 </option>
                 <option enabled="true" id="ANx02_Sampling" selection="ANx02_Sampling">
-                    <item id="ANx02_Sampling" input="1" vlaue="60"/>
+                    <item id="ANx02_Sampling" input="2" vlaue="120"/>
                 </option>
                 <option enabled="false" id="ANx10_Sampling" selection="ANx10_Sampling">
                     <item id="ANx10_Sampling" input="0.675" vlaue="42"/>
@@ -8193,7 +8193,7 @@
                     <item id="ANx11_Sampling" input="0.675" vlaue="42"/>
                 </option>
                 <option enabled="true" id="ANLarger_Sampling" selection="ANLarger_Sampling">
-                    <item id="ANLarger_Sampling" input="1" vlaue="60"/>
+                    <item id="ANLarger_Sampling" input="2" vlaue="120"/>
                 </option>
                 <option enabled="false" id="Temperature_Sampling" selection="Temperature_Sampling">
                     <item id="Temperature_Sampling" input="4.05" vlaue="243"/>
