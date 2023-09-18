@@ -12,7 +12,7 @@
 
 
 
-unsigned short temp0[12], temp1[12];
+short temp0[12], temp1[12];
 /**センサー型はこれ**/
 //typedef struct {
 //	float main[10];
@@ -94,16 +94,16 @@ void get_sensor(_sensor *baffa) {
 	R_Config_S12AD2_Get_ValueResult(ADCHANNEL17, &temp0[10]);
 	R_Config_S12AD2_Get_ValueResult(ADCHANNEL16, &temp0[11]);
 
-	baffa->main[0] =  (temp0[0]) - (temp1[0]);
-	baffa->main[1] =  (temp1[1]) - (temp0[1]);
-	baffa->main[2] =  (temp0[2]) - (temp1[2]);
-	baffa->main[3] =  (temp1[3]) - (temp0[3]);
-	baffa->main[4] =  (temp0[4]) - (temp1[4]);
-	baffa->main[5] =  (temp1[5]) - (temp0[5]);
-	baffa->main[6] =  (temp0[6]) - (temp1[6]);
-	baffa->main[7] =  (temp1[7]) - (temp0[7]);
-	baffa->main[8] =  (temp0[8]) - (temp1[8]);
-	baffa->main[9] =  (temp1[9]) - (temp0[9]);
+	baffa->main[0] =  (temp1[0]) - (temp0[0]);
+	baffa->main[1] =  (temp0[1]) - (temp1[1]);
+	baffa->main[2] =  (temp1[2]) - (temp0[2]);
+	baffa->main[3] =  (temp0[3]) - (temp1[3]);
+	baffa->main[4] =  (temp1[4]) - (temp0[4]);
+	baffa->main[5] =  (temp0[5]) - (temp1[5]);
+	baffa->main[6] =  (temp1[6]) - (temp0[6]);
+	baffa->main[7] =  (temp0[7]) - (temp1[7]);
+	baffa->main[8] =  (temp1[8]) - (temp0[8]);
+	baffa->main[9] =  (temp0[9]) - (temp1[9]);
 
 	baffa->goal =  (temp1[10]) -  (temp0[10]);
 	baffa->coner = (temp1[11]) -  (temp0[11]);
