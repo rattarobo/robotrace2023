@@ -72,6 +72,7 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/src/smc_gen/Config_S12AD2}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/src/smc_gen/Config_GPT2}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/src/smc_gen/Config_SCI1}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/src/smc_gen}&quot;"/>
 								</option>
 								<option id="com.renesas.cdt.managedbuild.gcc.core.option.compiler.source.std.1939734316" name="Language standard" superClass="com.renesas.cdt.managedbuild.gcc.core.option.compiler.source.std" useByScannerDiscovery="true" value="com.renesas.cdt.managedbuild.gcc.core.option.compiler.common.gnu99" valueType="enumerated"/>
 								<inputType id="com.renesas.cdt.managedbuild.gcc.core.inputType.compiler.c.1249340803" superClass="com.renesas.cdt.managedbuild.gcc.core.inputType.compiler.c"/>
@@ -100,6 +101,7 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/src/smc_gen/Config_S12AD2}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/src/smc_gen/Config_GPT2}&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/src/smc_gen/Config_SCI1}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/src/smc_gen}&quot;"/>
 								</option>
 								<inputType id="com.renesas.cdt.managedbuild.gcc.core.inputType.assembler.1943088136" superClass="com.renesas.cdt.managedbuild.gcc.core.inputType.assembler"/>
 							</tool>
@@ -211,4 +213,5 @@
 			<resource resourceType="PROJECT" workspacePath="/e2_RX66T_07_RUN"/>
 		</configuration>
 	</storageModule>
+	<storageModule moduleId="org.eclipse.cdt.make.core.buildtargets"/>
 </cproject>
