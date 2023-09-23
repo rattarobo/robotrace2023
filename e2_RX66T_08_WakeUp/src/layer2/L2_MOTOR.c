@@ -24,13 +24,38 @@
 /***************************************************************************************************************
  * 公開変数
  **************************************************************************************************************/
+float r_ei=0,l_ei=0;
+float lve_ref,rve_ref;
+
 
 /***************************************************************************************************************
  * 公開関数
  **************************************************************************************************************/
-void change_motor_velocity(float left_velocity, float right_velocity){
+void change_motor_velocity(_wheel command_value,_wheel recent_value){
+	float r_gein,l_gein;
+	float right_voltage,left_voltage;
 
-	change_motor_voltage();
+	float r_ve=command_value.velocity[1]-recent_value.velocity[1];
+	float l_ve=command_value.velocity[0]-recent_value.velocity[0];
+	//PIDゲインの導出
+	r_gein = RP * (command_value.velocity[1]-recent_value.velocity[1]) + RI * r_ei ;
+	l_gein = LP * (command_value.velocity[0]-recent_value.velocity[0]) + LI * l_ei ;
+	//スピードが0なら止まる　そうでないなら動かす
+	if (command_value.velocity[1]==0){
+		left_voltage=0;
+	}
+	if (command_value.velocity[0]==0){
+		right_voltage=0;
+	}
+	change_motor_voltage(left_voltage,right_voltage);
+	if ((r_gein < MAX_VOL) && (r_gein > MIN_VOL)) {
+		r_ei += DT * (r_ve + rve_ref) / 2;
+	}
+	if ((l_gein < MAX_VOL) && (l_gein > MIN_VOL)) {
+		l_ei += DT * (l_ve + lve_ref) / 2;
+	}
+	lve_ref=l_ve;
+	rve_ref=r_ve;
 }
 
 /***************************************************************************************************************
