@@ -51,11 +51,18 @@
 _wheel check_dist_velo(_wheel previous){//距離を求める
 	 _wheel temp;
 	 //距離を求める
-	 temp.distance[0]=(double)(l_enc* 12 / 42  / 400);//距離*ギア比*カウント/１回転当たりの信号量;左
-	 temp.distance[1]=(double)(r_enc* 12 / 42  / 400);//距離*ギア比*カウント/１回転当たりの信号量;右
+	 temp.distance[0]=(double)(l_enc* 12. / 42.  / 400.);//距離*ギア比*カウント/１回転当たりの信号量;左
+	 temp.distance[1]=(double)(r_enc* 12. / 42.  / 400.);//距離*ギア比*カウント/１回転当たりの信号量;右
+
 	 //速度を求める
-	 temp.velocity[0]=(float)(previous.distance[0]-temp.distance[0])*DT;//差分*dt左
-	 temp.velocity[1]=(float)(previous.distance[1]-temp.distance[1])*DT;//差分*dt右
+	 temp.velocity[0]=(float)(temp.distance[0]-previous.distance[0]);//差分*dt左
+	 temp.velocity[1]=(float)(temp.distance[1]-previous.distance[1]);//差分*dt右
+	 if (temp.velocity[0]>10 ||temp.velocity[0]<-10){
+		 temp.velocity[0]=previous.distance[0];
+	 }
+	 if (temp.velocity[1]>10 ||temp.velocity[1]<-10){
+		 temp.velocity[1]=previous.distance[1];
+	 }
 	 return temp;
  }
 

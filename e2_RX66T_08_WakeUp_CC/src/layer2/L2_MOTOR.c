@@ -32,20 +32,20 @@ float lve_ref,rve_ref;
  * 公開関数
  **************************************************************************************************************/
 void change_motor_velocity(_wheel command_value,_wheel recent_value){
-	float r_gein,l_gein;
-	float right_voltage,left_voltage;
+	long r_gein,l_gein;
+
 
 	float r_ve=command_value.velocity[1]-recent_value.velocity[1];
 	float l_ve=command_value.velocity[0]-recent_value.velocity[0];
 	//PIDゲインの導出
-	r_gein = RP * (command_value.velocity[1]-recent_value.velocity[1]) + RI * r_ei ;
-	l_gein = LP * (command_value.velocity[0]-recent_value.velocity[0]) + LI * l_ei ;
+	r_gein = (long)(RP * (command_value.velocity[1]-recent_value.velocity[1]) + RI * r_ei+RD*(r_ve-rve_ref) );
+	l_gein = (long)(LP * (command_value.velocity[0]-recent_value.velocity[0]) + LI * l_ei+LD*(l_ve-lve_ref) );
 	//スピードが0なら止まる　そうでないなら動かす
-	if (command_value.velocity[1]==0){
-		left_voltage=0;
+	if (command_value.velocity[1]==0.){
+		l_gein=0;
 	}
-	if (command_value.velocity[0]==0){
-		right_voltage=0;
+	if (command_value.velocity[0]==0.){
+		r_gein=0;
 	}
 	change_motor_voltage(l_gein,r_gein);
 	if ((r_gein < MAX_VOL) && (r_gein > MIN_VOL)) {

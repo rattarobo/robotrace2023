@@ -16,15 +16,15 @@
 #define BATTERY_MAX	8.4
 #define BATTERY_COUNT 50
 
-#define RP 0.8
-#define RI 0.1
-#define RD 0
+#define RP 1.14
+#define RI 0
+#define RD (0.203*5)
 
-#define LP 0.8
-#define LI 0.1
-#define LD 0
+#define LP 1.14
+#define LI 0
+#define LD (0.203*5)
 
-#define  DT  0.001
+#define  DT  0.005
 #define  DT2 0.05
 /***********************************************************************************************************
  * 構造体宣言
