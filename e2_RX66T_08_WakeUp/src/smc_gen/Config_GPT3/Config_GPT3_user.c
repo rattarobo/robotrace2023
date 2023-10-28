@@ -36,6 +36,7 @@ Includes
 #include "r_cg_macrodriver.h"
 #include "Config_GPT3.h"
 /* Start user code for include. Do not edit comment generated here */
+#include "L1_GPTW.h"
 /* End user code. Do not edit comment generated here */
 #include "r_cg_userdefine.h"
 
@@ -55,7 +56,8 @@ Global variables and functions
 void R_Config_GPT3_Create_UserInit(void)
 {
     /* Start user code for user init. Do not edit comment generated here */
-    /* End user code. Do not edit comment generated here */
+
+	/* End user code. Do not edit comment generated here */
 }
 
 /***********************************************************************************************************************
@@ -68,7 +70,8 @@ void R_Config_GPT3_Create_UserInit(void)
 void r_Config_GPT3_gtciv3_interrupt(void)
 {
     /* Start user code for r_Config_GPT3_gtciv3_interrupt. Do not edit comment generated here */
-    /* End user code. Do not edit comment generated here */
+	l_over++;
+	/* End user code. Do not edit comment generated here */
 }
 
 /***********************************************************************************************************************
@@ -81,7 +84,8 @@ void r_Config_GPT3_gtciv3_interrupt(void)
 void r_Config_GPT3_gtciu3_interrupt(void)
 {
     /* Start user code for r_Config_GPT3_gtciu3_interrupt. Do not edit comment generated here */
-    /* End user code. Do not edit comment generated here */
+	l_over--;
+	/* End user code. Do not edit comment generated here */
 }
 
 /* Start user code for adding. Do not edit comment generated here */

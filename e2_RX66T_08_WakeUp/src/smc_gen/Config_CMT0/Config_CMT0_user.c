@@ -39,6 +39,7 @@ Includes
 #include "L1_CLOCK.h"
 #include "L1_IO.h"
 #include "L1_AD.h"
+#include "L1_GPTW.h"
 /* End user code. Do not edit comment generated here */
 #include "r_cg_userdefine.h"
 
@@ -74,6 +75,7 @@ void r_Config_CMT0_cmi0_interrupt(void)
 {
     /* Start user code for r_Config_CMT0_cmi0_interrupt. Do not edit comment generated here */
 	timer();
+	 read_encorder();
 	get_bat_vol();
 	get_sensor(&raw);
 

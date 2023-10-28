@@ -18,8 +18,8 @@ void GPTW_PWM(long left_PWM, long right_PWM){
 }
 
 long l_enc, r_enc;
-short r_over;
-short l_over;
+short r_over=0;
+short l_over=0;
 void read_encorder(void) {
 
 	l_enc = (signed long int) (GPTW3.GTCNT)

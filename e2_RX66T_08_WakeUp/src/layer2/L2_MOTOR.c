@@ -47,7 +47,7 @@ void change_motor_velocity(_wheel command_value,_wheel recent_value){
 	if (command_value.velocity[0]==0){
 		right_voltage=0;
 	}
-	change_motor_voltage(left_voltage,right_voltage);
+	change_motor_voltage(l_gein,r_gein);
 	if ((r_gein < MAX_VOL) && (r_gein > MIN_VOL)) {
 		r_ei += DT * (r_ve + rve_ref) / 2;
 	}
