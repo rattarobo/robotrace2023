@@ -57,6 +57,7 @@ extern _wheel check_dist_velo(_wheel previous);
 extern void set_callibration(_sensorRaw *raw);
 extern _sensor sensor_callibration(_sensorRaw *raw);
 extern float get_sensor_angle(_sensor *get);
+extern void reset_value(_wheel previous);
 /***********************************************************************************************************
  * extern 変数宣言
  **********************************************************************************************************/
