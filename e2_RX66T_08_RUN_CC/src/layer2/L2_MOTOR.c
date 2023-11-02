@@ -42,10 +42,10 @@ void change_motor_velocity(_wheel command_value,_wheel recent_value){
 	r_gein = (long)(RP * (r_ve) + RI*DT * r_ei+RD/(1+N*DT)*(r_ve-rve_ref) );
 	l_gein = (long)(LP * (l_ve) + LI*DT * l_ei+LD/(1+N*DT)*(l_ve-lve_ref) );
 	//スピードが0なら止まる　そうでないなら動かす
-	if ((l_ve<5 && l_ve>-5)&&command_value.velocity[0]==0){
+	if ((l_ve<10 && l_ve>-10)||command_value.velocity[0]==0){
 		l_gein=0;
 	}
-	if ((r_ve<5 && r_ve>-5)&&command_value.velocity[1]==0){
+	if ((r_ve<10 && r_ve>-10)||command_value.velocity[1]==0){
 		r_gein=0;
 	}
 	change_motor_voltage(l_gein,r_gein);

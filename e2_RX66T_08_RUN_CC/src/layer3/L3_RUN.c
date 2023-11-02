@@ -58,9 +58,10 @@ void RUN(void){
 		mycommand_value =run_pid(0.,angle);
 		previous_value=check_dist_velo(previous_value);
 		change_motor_velocity(mycommand_value,previous_value);
+		R_BSP_SoftwareDelay(25,BSP_DELAY_MILLISECS );
 //ゴール分岐
 		if(get.goal >0.5){
-			for (int i=1;i<100;i++){
+			for (int i=1;i<40;i++){
 				//走行
 				get=sensor_callibration(&raw);
 				if(get.main[2]<0.5 && get.main[3]<0.5  &&get.main[4]<0.5  &&get.main[5]<0.5  &&get.main[6]<0.5  &&get.main[7]<0.5 ){
@@ -71,7 +72,7 @@ void RUN(void){
 				previous_value=check_dist_velo(previous_value);
 				change_motor_velocity(mycommand_value,previous_value);
 				//flag管理
-				R_BSP_SoftwareDelay(10,BSP_DELAY_MILLISECS );
+				R_BSP_SoftwareDelay(25,BSP_DELAY_MILLISECS );
 				if(get.coner >0.5){
 					goal_count --;
 					break;
@@ -83,7 +84,7 @@ void RUN(void){
 		}
 //コ－ナー分岐
 		if(get.coner >0.5){
-			for (int i=1;i<100;i++){
+			for (int i=1;i<40;i++){
 				//走行
 				get=sensor_callibration(&raw);
 				if(get.main[2]<0.5 && get.main[3]<0.5  &&get.main[4]<0.5  &&get.main[5]<0.5  &&get.main[6]<0.5  &&get.main[7]<0.5 ){
@@ -93,20 +94,20 @@ void RUN(void){
 				mycommand_value =run_pid(0.,angle);
 				previous_value=check_dist_velo(previous_value);
 				change_motor_velocity(mycommand_value,previous_value);
-				R_BSP_SoftwareDelay(10,BSP_DELAY_MILLISECS );
+				R_BSP_SoftwareDelay(25,BSP_DELAY_MILLISECS );
 
 			}
 			coner_count++;
 		}
 		if (goal_count >1){
-			for (int i=1;i<300;i++){
+			for (int i=1;i<40;i++){
 				//走行
 				get=sensor_callibration(&raw);
 				angle=get_sensor_angle(&get);
 				mycommand_value =run_pid(0.,angle);
 				previous_value=check_dist_velo(previous_value);
 				change_motor_velocity(mycommand_value,previous_value);
-				R_BSP_SoftwareDelay(10,BSP_DELAY_MILLISECS );
+				R_BSP_SoftwareDelay(25,BSP_DELAY_MILLISECS );
 
 			}
 			mycommand_value =stop();
