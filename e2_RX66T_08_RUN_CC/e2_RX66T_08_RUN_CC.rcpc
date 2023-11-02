@@ -1060,27 +1060,27 @@
         <CompileOptions>
           <Option>-isa=rxv3</Option>
           <Option>-fpu</Option>
-          <Option>-include="${ProjDirPath}\src\layer1"</Option>
-          <Option>-include="${ProjDirPath}\src\layer2"</Option>
-          <Option>-include="${ProjDirPath}\src\layer3"</Option>
-          <Option>-include="${ProjDirPath}\src\smc_gen\r_bsp"</Option>
-          <Option>-include="${ProjDirPath}\src\smc_gen\r_pincfg"</Option>
-          <Option>-include="${ProjDirPath}\src\smc_gen\general"</Option>
-          <Option>-include="${ProjDirPath}\src\smc_gen\r_config"</Option>
-          <Option>-include="${ProjDirPath}\src\smc_gen"</Option>
-          <Option>-include="${ProjDirPath}\src\smc_gen\Config_GPT4"</Option>
-          <Option>-include="${ProjDirPath}\src\smc_gen\Config_S12AD1"</Option>
-          <Option>-include="${ProjDirPath}\src\smc_gen\Config_PORT"</Option>
-          <Option>-include="${ProjDirPath}\src\smc_gen\Config_SCI1"</Option>
-          <Option>-include="${ProjDirPath}\src\smc_gen\Config_MTU0"</Option>
-          <Option>-include="${ProjDirPath}\src\smc_gen\Config_DMAC0"</Option>
-          <Option>-include="${ProjDirPath}\src\smc_gen\Config_DMAC1"</Option>
-          <Option>-include="${ProjDirPath}\src\smc_gen\Config_CMT0"</Option>
-          <Option>-include="${ProjDirPath}\src\smc_gen\Config_CMT1"</Option>
-          <Option>-include="${ProjDirPath}\src\smc_gen\Config_GPT2"</Option>
-          <Option>-include="${ProjDirPath}\src\smc_gen\Config_GPT3"</Option>
-          <Option>-include="${ProjDirPath}\src\smc_gen\Config_S12AD0"</Option>
-          <Option>-include="${ProjDirPath}\src\smc_gen\Config_S12AD2"</Option>
+          <Option>-include="${ProjDirPath}\..\..\..\e2_studio\2022robo\${ProjName}\src\layer1"</Option>
+          <Option>-include="${ProjDirPath}\..\..\..\e2_studio\2022robo\${ProjName}\src\layer2"</Option>
+          <Option>-include="${ProjDirPath}\..\..\..\e2_studio\2022robo\${ProjName}\src\layer3"</Option>
+          <Option>-include="${ProjDirPath}\..\..\..\e2_studio\2022robo\${ProjName}\src\smc_gen\r_bsp"</Option>
+          <Option>-include="${ProjDirPath}\..\..\..\e2_studio\2022robo\${ProjName}\src\smc_gen\r_pincfg"</Option>
+          <Option>-include="${ProjDirPath}\..\..\..\e2_studio\2022robo\${ProjName}\src\smc_gen\general"</Option>
+          <Option>-include="${ProjDirPath}\..\..\..\e2_studio\2022robo\${ProjName}\src\smc_gen\r_config"</Option>
+          <Option>-include="${ProjDirPath}\..\..\..\e2_studio\2022robo\${ProjName}\src\smc_gen"</Option>
+          <Option>-include="${ProjDirPath}\..\..\..\e2_studio\2022robo\${ProjName}\src\smc_gen\Config_GPT4"</Option>
+          <Option>-include="${ProjDirPath}\..\..\..\e2_studio\2022robo\${ProjName}\src\smc_gen\Config_S12AD1"</Option>
+          <Option>-include="${ProjDirPath}\..\..\..\e2_studio\2022robo\${ProjName}\src\smc_gen\Config_PORT"</Option>
+          <Option>-include="${ProjDirPath}\..\..\..\e2_studio\2022robo\${ProjName}\src\smc_gen\Config_SCI1"</Option>
+          <Option>-include="${ProjDirPath}\..\..\..\e2_studio\2022robo\${ProjName}\src\smc_gen\Config_MTU0"</Option>
+          <Option>-include="${ProjDirPath}\..\..\..\e2_studio\2022robo\${ProjName}\src\smc_gen\Config_DMAC0"</Option>
+          <Option>-include="${ProjDirPath}\..\..\..\e2_studio\2022robo\${ProjName}\src\smc_gen\Config_DMAC1"</Option>
+          <Option>-include="${ProjDirPath}\..\..\..\e2_studio\2022robo\${ProjName}\src\smc_gen\Config_CMT0"</Option>
+          <Option>-include="${ProjDirPath}\..\..\..\e2_studio\2022robo\${ProjName}\src\smc_gen\Config_CMT1"</Option>
+          <Option>-include="${ProjDirPath}\..\..\..\e2_studio\2022robo\${ProjName}\src\smc_gen\Config_GPT2"</Option>
+          <Option>-include="${ProjDirPath}\..\..\..\e2_studio\2022robo\${ProjName}\src\smc_gen\Config_GPT3"</Option>
+          <Option>-include="${ProjDirPath}\..\..\..\e2_studio\2022robo\${ProjName}\src\smc_gen\Config_S12AD0"</Option>
+          <Option>-include="${ProjDirPath}\..\..\..\e2_studio\2022robo\${ProjName}\src\smc_gen\Config_S12AD2"</Option>
           <Option>-asmopt=-nobank</Option>
           <Option>-utf8</Option>
           <Option>-nomessage</Option>
@@ -1096,27 +1096,27 @@
         <AssembleOptions>
           <Option>-isa=rxv3</Option>
           <Option>-fpu</Option>
-          <Option>-include="${ProjDirPath}\src\smc_gen\r_bsp"</Option>
-          <Option>-include="${ProjDirPath}\src\layer3"</Option>
-          <Option>-include="${ProjDirPath}\src\layer2"</Option>
-          <Option>-include="${ProjDirPath}\src\layer1"</Option>
-          <Option>-include="${ProjDirPath}\src\smc_gen\r_pincfg"</Option>
-          <Option>-include="${ProjDirPath}\src\smc_gen\general"</Option>
-          <Option>-include="${ProjDirPath}\src\smc_gen\r_config"</Option>
-          <Option>-include="${ProjDirPath}\src\smc_gen"</Option>
-          <Option>-include="${ProjDirPath}\src\smc_gen\Config_GPT4"</Option>
-          <Option>-include="${ProjDirPath}\src\smc_gen\Config_S12AD1"</Option>
-          <Option>-include="${ProjDirPath}\src\smc_gen\Config_PORT"</Option>
-          <Option>-include="${ProjDirPath}\src\smc_gen\Config_SCI1"</Option>
-          <Option>-include="${ProjDirPath}\src\smc_gen\Config_MTU0"</Option>
-          <Option>-include="${ProjDirPath}\src\smc_gen\Config_DMAC0"</Option>
-          <Option>-include="${ProjDirPath}\src\smc_gen\Config_DMAC1"</Option>
-          <Option>-include="${ProjDirPath}\src\smc_gen\Config_CMT0"</Option>
-          <Option>-include="${ProjDirPath}\src\smc_gen\Config_CMT1"</Option>
-          <Option>-include="${ProjDirPath}\src\smc_gen\Config_GPT2"</Option>
-          <Option>-include="${ProjDirPath}\src\smc_gen\Config_GPT3"</Option>
-          <Option>-include="${ProjDirPath}\src\smc_gen\Config_S12AD0"</Option>
-          <Option>-include="${ProjDirPath}\src\smc_gen\Config_S12AD2"</Option>
+          <Option>-include="${ProjDirPath}\..\..\..\e2_studio\2022robo\${ProjName}\src\smc_gen\r_bsp"</Option>
+          <Option>-include="${ProjDirPath}\..\..\..\e2_studio\2022robo\${ProjName}\src\layer3"</Option>
+          <Option>-include="${ProjDirPath}\..\..\..\e2_studio\2022robo\${ProjName}\src\layer2"</Option>
+          <Option>-include="${ProjDirPath}\..\..\..\e2_studio\2022robo\${ProjName}\src\layer1"</Option>
+          <Option>-include="${ProjDirPath}\..\..\..\e2_studio\2022robo\${ProjName}\src\smc_gen\r_pincfg"</Option>
+          <Option>-include="${ProjDirPath}\..\..\..\e2_studio\2022robo\${ProjName}\src\smc_gen\general"</Option>
+          <Option>-include="${ProjDirPath}\..\..\..\e2_studio\2022robo\${ProjName}\src\smc_gen\r_config"</Option>
+          <Option>-include="${ProjDirPath}\..\..\..\e2_studio\2022robo\${ProjName}\src\smc_gen"</Option>
+          <Option>-include="${ProjDirPath}\..\..\..\e2_studio\2022robo\${ProjName}\src\smc_gen\Config_GPT4"</Option>
+          <Option>-include="${ProjDirPath}\..\..\..\e2_studio\2022robo\${ProjName}\src\smc_gen\Config_S12AD1"</Option>
+          <Option>-include="${ProjDirPath}\..\..\..\e2_studio\2022robo\${ProjName}\src\smc_gen\Config_PORT"</Option>
+          <Option>-include="${ProjDirPath}\..\..\..\e2_studio\2022robo\${ProjName}\src\smc_gen\Config_SCI1"</Option>
+          <Option>-include="${ProjDirPath}\..\..\..\e2_studio\2022robo\${ProjName}\src\smc_gen\Config_MTU0"</Option>
+          <Option>-include="${ProjDirPath}\..\..\..\e2_studio\2022robo\${ProjName}\src\smc_gen\Config_DMAC0"</Option>
+          <Option>-include="${ProjDirPath}\..\..\..\e2_studio\2022robo\${ProjName}\src\smc_gen\Config_DMAC1"</Option>
+          <Option>-include="${ProjDirPath}\..\..\..\e2_studio\2022robo\${ProjName}\src\smc_gen\Config_CMT0"</Option>
+          <Option>-include="${ProjDirPath}\..\..\..\e2_studio\2022robo\${ProjName}\src\smc_gen\Config_CMT1"</Option>
+          <Option>-include="${ProjDirPath}\..\..\..\e2_studio\2022robo\${ProjName}\src\smc_gen\Config_GPT2"</Option>
+          <Option>-include="${ProjDirPath}\..\..\..\e2_studio\2022robo\${ProjName}\src\smc_gen\Config_GPT3"</Option>
+          <Option>-include="${ProjDirPath}\..\..\..\e2_studio\2022robo\${ProjName}\src\smc_gen\Config_S12AD0"</Option>
+          <Option>-include="${ProjDirPath}\..\..\..\e2_studio\2022robo\${ProjName}\src\smc_gen\Config_S12AD2"</Option>
           <Option>-utf8</Option>
           <Option>-nobank</Option>
           <Option>-debug</Option>
@@ -1475,48 +1475,48 @@
         <NoTargetFile Target="trash\2023-11-02-18-12-07\src\smc_gen\r_bsp\mcu\rx66t\vecttbl.c"/>
         <NoTargetFile Target="trash\2023-11-02-18-12-07\src\smc_gen\r_pincfg\Pin.c"/>
         <CommonOptions>
-          <IncludePathForC>"${ProjDirPath}\src\layer1"</IncludePathForC>
-          <IncludePathForC>"${ProjDirPath}\src\layer2"</IncludePathForC>
-          <IncludePathForC>"${ProjDirPath}\src\layer3"</IncludePathForC>
-          <IncludePathForC>"${ProjDirPath}\src\smc_gen\r_bsp"</IncludePathForC>
-          <IncludePathForC>"${ProjDirPath}\src\smc_gen\r_pincfg"</IncludePathForC>
-          <IncludePathForC>"${ProjDirPath}\src\smc_gen\general"</IncludePathForC>
-          <IncludePathForC>"${ProjDirPath}\src\smc_gen\r_config"</IncludePathForC>
-          <IncludePathForC>"${ProjDirPath}\src\smc_gen"</IncludePathForC>
-          <IncludePathForC>"${ProjDirPath}\src\smc_gen\Config_GPT4"</IncludePathForC>
-          <IncludePathForC>"${ProjDirPath}\src\smc_gen\Config_S12AD1"</IncludePathForC>
-          <IncludePathForC>"${ProjDirPath}\src\smc_gen\Config_PORT"</IncludePathForC>
-          <IncludePathForC>"${ProjDirPath}\src\smc_gen\Config_SCI1"</IncludePathForC>
-          <IncludePathForC>"${ProjDirPath}\src\smc_gen\Config_MTU0"</IncludePathForC>
-          <IncludePathForC>"${ProjDirPath}\src\smc_gen\Config_DMAC0"</IncludePathForC>
-          <IncludePathForC>"${ProjDirPath}\src\smc_gen\Config_DMAC1"</IncludePathForC>
-          <IncludePathForC>"${ProjDirPath}\src\smc_gen\Config_CMT0"</IncludePathForC>
-          <IncludePathForC>"${ProjDirPath}\src\smc_gen\Config_CMT1"</IncludePathForC>
-          <IncludePathForC>"${ProjDirPath}\src\smc_gen\Config_GPT2"</IncludePathForC>
-          <IncludePathForC>"${ProjDirPath}\src\smc_gen\Config_GPT3"</IncludePathForC>
-          <IncludePathForC>"${ProjDirPath}\src\smc_gen\Config_S12AD0"</IncludePathForC>
-          <IncludePathForC>"${ProjDirPath}\src\smc_gen\Config_S12AD2"</IncludePathForC>
-          <IncludePathForAsm>"${ProjDirPath}\src\smc_gen\r_bsp"</IncludePathForAsm>
-          <IncludePathForAsm>"${ProjDirPath}\src\layer3"</IncludePathForAsm>
-          <IncludePathForAsm>"${ProjDirPath}\src\layer2"</IncludePathForAsm>
-          <IncludePathForAsm>"${ProjDirPath}\src\layer1"</IncludePathForAsm>
-          <IncludePathForAsm>"${ProjDirPath}\src\smc_gen\r_pincfg"</IncludePathForAsm>
-          <IncludePathForAsm>"${ProjDirPath}\src\smc_gen\general"</IncludePathForAsm>
-          <IncludePathForAsm>"${ProjDirPath}\src\smc_gen\r_config"</IncludePathForAsm>
-          <IncludePathForAsm>"${ProjDirPath}\src\smc_gen"</IncludePathForAsm>
-          <IncludePathForAsm>"${ProjDirPath}\src\smc_gen\Config_GPT4"</IncludePathForAsm>
-          <IncludePathForAsm>"${ProjDirPath}\src\smc_gen\Config_S12AD1"</IncludePathForAsm>
-          <IncludePathForAsm>"${ProjDirPath}\src\smc_gen\Config_PORT"</IncludePathForAsm>
-          <IncludePathForAsm>"${ProjDirPath}\src\smc_gen\Config_SCI1"</IncludePathForAsm>
-          <IncludePathForAsm>"${ProjDirPath}\src\smc_gen\Config_MTU0"</IncludePathForAsm>
-          <IncludePathForAsm>"${ProjDirPath}\src\smc_gen\Config_DMAC0"</IncludePathForAsm>
-          <IncludePathForAsm>"${ProjDirPath}\src\smc_gen\Config_DMAC1"</IncludePathForAsm>
-          <IncludePathForAsm>"${ProjDirPath}\src\smc_gen\Config_CMT0"</IncludePathForAsm>
-          <IncludePathForAsm>"${ProjDirPath}\src\smc_gen\Config_CMT1"</IncludePathForAsm>
-          <IncludePathForAsm>"${ProjDirPath}\src\smc_gen\Config_GPT2"</IncludePathForAsm>
-          <IncludePathForAsm>"${ProjDirPath}\src\smc_gen\Config_GPT3"</IncludePathForAsm>
-          <IncludePathForAsm>"${ProjDirPath}\src\smc_gen\Config_S12AD0"</IncludePathForAsm>
-          <IncludePathForAsm>"${ProjDirPath}\src\smc_gen\Config_S12AD2"</IncludePathForAsm>
+          <IncludePathForC>"${ProjDirPath}\..\..\..\e2_studio\2022robo\${ProjName}\src\layer1"</IncludePathForC>
+          <IncludePathForC>"${ProjDirPath}\..\..\..\e2_studio\2022robo\${ProjName}\src\layer2"</IncludePathForC>
+          <IncludePathForC>"${ProjDirPath}\..\..\..\e2_studio\2022robo\${ProjName}\src\layer3"</IncludePathForC>
+          <IncludePathForC>"${ProjDirPath}\..\..\..\e2_studio\2022robo\${ProjName}\src\smc_gen\r_bsp"</IncludePathForC>
+          <IncludePathForC>"${ProjDirPath}\..\..\..\e2_studio\2022robo\${ProjName}\src\smc_gen\r_pincfg"</IncludePathForC>
+          <IncludePathForC>"${ProjDirPath}\..\..\..\e2_studio\2022robo\${ProjName}\src\smc_gen\general"</IncludePathForC>
+          <IncludePathForC>"${ProjDirPath}\..\..\..\e2_studio\2022robo\${ProjName}\src\smc_gen\r_config"</IncludePathForC>
+          <IncludePathForC>"${ProjDirPath}\..\..\..\e2_studio\2022robo\${ProjName}\src\smc_gen"</IncludePathForC>
+          <IncludePathForC>"${ProjDirPath}\..\..\..\e2_studio\2022robo\${ProjName}\src\smc_gen\Config_GPT4"</IncludePathForC>
+          <IncludePathForC>"${ProjDirPath}\..\..\..\e2_studio\2022robo\${ProjName}\src\smc_gen\Config_S12AD1"</IncludePathForC>
+          <IncludePathForC>"${ProjDirPath}\..\..\..\e2_studio\2022robo\${ProjName}\src\smc_gen\Config_PORT"</IncludePathForC>
+          <IncludePathForC>"${ProjDirPath}\..\..\..\e2_studio\2022robo\${ProjName}\src\smc_gen\Config_SCI1"</IncludePathForC>
+          <IncludePathForC>"${ProjDirPath}\..\..\..\e2_studio\2022robo\${ProjName}\src\smc_gen\Config_MTU0"</IncludePathForC>
+          <IncludePathForC>"${ProjDirPath}\..\..\..\e2_studio\2022robo\${ProjName}\src\smc_gen\Config_DMAC0"</IncludePathForC>
+          <IncludePathForC>"${ProjDirPath}\..\..\..\e2_studio\2022robo\${ProjName}\src\smc_gen\Config_DMAC1"</IncludePathForC>
+          <IncludePathForC>"${ProjDirPath}\..\..\..\e2_studio\2022robo\${ProjName}\src\smc_gen\Config_CMT0"</IncludePathForC>
+          <IncludePathForC>"${ProjDirPath}\..\..\..\e2_studio\2022robo\${ProjName}\src\smc_gen\Config_CMT1"</IncludePathForC>
+          <IncludePathForC>"${ProjDirPath}\..\..\..\e2_studio\2022robo\${ProjName}\src\smc_gen\Config_GPT2"</IncludePathForC>
+          <IncludePathForC>"${ProjDirPath}\..\..\..\e2_studio\2022robo\${ProjName}\src\smc_gen\Config_GPT3"</IncludePathForC>
+          <IncludePathForC>"${ProjDirPath}\..\..\..\e2_studio\2022robo\${ProjName}\src\smc_gen\Config_S12AD0"</IncludePathForC>
+          <IncludePathForC>"${ProjDirPath}\..\..\..\e2_studio\2022robo\${ProjName}\src\smc_gen\Config_S12AD2"</IncludePathForC>
+          <IncludePathForAsm>"${ProjDirPath}\..\..\..\e2_studio\2022robo\${ProjName}\src\smc_gen\r_bsp"</IncludePathForAsm>
+          <IncludePathForAsm>"${ProjDirPath}\..\..\..\e2_studio\2022robo\${ProjName}\src\layer3"</IncludePathForAsm>
+          <IncludePathForAsm>"${ProjDirPath}\..\..\..\e2_studio\2022robo\${ProjName}\src\layer2"</IncludePathForAsm>
+          <IncludePathForAsm>"${ProjDirPath}\..\..\..\e2_studio\2022robo\${ProjName}\src\layer1"</IncludePathForAsm>
+          <IncludePathForAsm>"${ProjDirPath}\..\..\..\e2_studio\2022robo\${ProjName}\src\smc_gen\r_pincfg"</IncludePathForAsm>
+          <IncludePathForAsm>"${ProjDirPath}\..\..\..\e2_studio\2022robo\${ProjName}\src\smc_gen\general"</IncludePathForAsm>
+          <IncludePathForAsm>"${ProjDirPath}\..\..\..\e2_studio\2022robo\${ProjName}\src\smc_gen\r_config"</IncludePathForAsm>
+          <IncludePathForAsm>"${ProjDirPath}\..\..\..\e2_studio\2022robo\${ProjName}\src\smc_gen"</IncludePathForAsm>
+          <IncludePathForAsm>"${ProjDirPath}\..\..\..\e2_studio\2022robo\${ProjName}\src\smc_gen\Config_GPT4"</IncludePathForAsm>
+          <IncludePathForAsm>"${ProjDirPath}\..\..\..\e2_studio\2022robo\${ProjName}\src\smc_gen\Config_S12AD1"</IncludePathForAsm>
+          <IncludePathForAsm>"${ProjDirPath}\..\..\..\e2_studio\2022robo\${ProjName}\src\smc_gen\Config_PORT"</IncludePathForAsm>
+          <IncludePathForAsm>"${ProjDirPath}\..\..\..\e2_studio\2022robo\${ProjName}\src\smc_gen\Config_SCI1"</IncludePathForAsm>
+          <IncludePathForAsm>"${ProjDirPath}\..\..\..\e2_studio\2022robo\${ProjName}\src\smc_gen\Config_MTU0"</IncludePathForAsm>
+          <IncludePathForAsm>"${ProjDirPath}\..\..\..\e2_studio\2022robo\${ProjName}\src\smc_gen\Config_DMAC0"</IncludePathForAsm>
+          <IncludePathForAsm>"${ProjDirPath}\..\..\..\e2_studio\2022robo\${ProjName}\src\smc_gen\Config_DMAC1"</IncludePathForAsm>
+          <IncludePathForAsm>"${ProjDirPath}\..\..\..\e2_studio\2022robo\${ProjName}\src\smc_gen\Config_CMT0"</IncludePathForAsm>
+          <IncludePathForAsm>"${ProjDirPath}\..\..\..\e2_studio\2022robo\${ProjName}\src\smc_gen\Config_CMT1"</IncludePathForAsm>
+          <IncludePathForAsm>"${ProjDirPath}\..\..\..\e2_studio\2022robo\${ProjName}\src\smc_gen\Config_GPT2"</IncludePathForAsm>
+          <IncludePathForAsm>"${ProjDirPath}\..\..\..\e2_studio\2022robo\${ProjName}\src\smc_gen\Config_GPT3"</IncludePathForAsm>
+          <IncludePathForAsm>"${ProjDirPath}\..\..\..\e2_studio\2022robo\${ProjName}\src\smc_gen\Config_S12AD0"</IncludePathForAsm>
+          <IncludePathForAsm>"${ProjDirPath}\..\..\..\e2_studio\2022robo\${ProjName}\src\smc_gen\Config_S12AD2"</IncludePathForAsm>
         </CommonOptions>
       </BuildMode>
     </BuildOptions>

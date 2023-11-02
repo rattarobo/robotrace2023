@@ -28,7 +28,7 @@
  **************************************************************************************************************/
 float a_ei=0.;
 float ave_ref=0.;
-
+char goal_count=0;
 
 /***************************************************************************************************************
  * 公開変数
@@ -51,8 +51,11 @@ void RUN(void){
 
 		previous_value=check_dist_velo(previous_value);
 		change_motor_velocity(mycommand_value,previous_value);
-		sprintf(print_str, "\r%f=%f\r%f\r\n",previous_value.distance[0],previous_value.distance[1],angle);
-		R_DMAC1_AsyncTransmit((uint8_t *) print_str, (uint16_t) strlen(print_str));
+//		sprintf(print_str, "\r%f\r\n",angle);
+//		R_DMAC1_AsyncTransmit((uint8_t *) print_str, (uint16_t) strlen(print_str));
+		if(goal_count >1){
+			break;
+		}
 		}
 }
 
@@ -65,10 +68,16 @@ _wheel run_pid(float command_value,float recent_value){
 	float a_ve=command_value-recent_value;
 
 		//PIDゲインの導出
-		command.velocity[1] = (float)(RRP * (a_ve) + RRI * a_ei+RRD*(a_ve-ave_ref) )+Translation;
-		command.velocity[0] = (float)(RLP * (a_ve) + RLI * a_ei+RLD*(a_ve-ave_ref) )+Translation;
+		command.distance[1] =(float)(RRP * (a_ve) + RRI * a_ei+RRD*(a_ve-ave_ref) )+Translation;
+		command.distance[0] =(float)(RLP * (a_ve) + RLI * a_ei+RLD*(a_ve-ave_ref) )+Translation;
 		//スピードが0なら止まる　そうでないなら動かす
 		a_ei=a_ei+a_ve;
 		ave_ref=a_ve;
 	return command;
+}
+void stop(_sensor *get){
+	if(get->goal>0.5){
+
+		goal_count ++;
+	}
 }

@@ -12,8 +12,8 @@
  * define　宣言
  **********************************************************************************************************/
 #define Translation (0.)
-#define RRP 0.1
-#define RLP 0.1
+#define RRP 50
+#define RLP 50
 #define RRI 0
 #define RLI 0
 #define RRD 0

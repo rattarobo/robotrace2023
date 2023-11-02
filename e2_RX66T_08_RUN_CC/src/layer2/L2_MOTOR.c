@@ -36,16 +36,16 @@ void change_motor_velocity(_wheel command_value,_wheel recent_value){
 	long r_gein,l_gein;
 
 
-	float r_ve=command_value.velocity[1]-recent_value.velocity[1];
-	float l_ve=command_value.velocity[0]-recent_value.velocity[0];
+	float r_ve=command_value.distance[1]-recent_value.distance[1];
+	float l_ve=command_value.distance[0]-recent_value.distance[0];
 	//PIDゲインの導出
-	r_gein = (long)(RP * (command_value.velocity[1]-recent_value.velocity[1]) + RI * r_ei+RD*(r_ve-rve_ref) );
-	l_gein = (long)(LP * (command_value.velocity[0]-recent_value.velocity[0]) + LI * l_ei+LD*(l_ve-lve_ref) );
+	r_gein = (long)(RP * (r_ve) + RI*DT * r_ei+RD/(1+N*DT)*(r_ve-rve_ref) );
+	l_gein = (long)(LP * (l_ve) + LI*DT * l_ei+LD/(1+N*DT)*(l_ve-lve_ref) );
 	//スピードが0なら止まる　そうでないなら動かす
-	if (command_value.velocity[1]==0.){
+	if ((l_ve<5 && l_ve>-5)&&command_value.velocity[0]==0){
 		l_gein=0;
 	}
-	if (command_value.velocity[0]==0.){
+	if ((r_ve<5 && r_ve>-5)&&command_value.velocity[1]==0){
 		r_gein=0;
 	}
 	change_motor_voltage(l_gein,r_gein);

@@ -23,7 +23,7 @@ short l_over=0;
 void read_encorder(void) {
 
 	l_enc = (signed long int) (GPTW3.GTCNT)
-			+ (signed long int) (USHRT_MAX) * (signed long int) r_over; //1周期：400パルス＊位相係数：4＊ギア比３　＝4800
-	r_enc = (signed long int) (GPTW2.GTCNT)
 			+ (signed long int) (USHRT_MAX) * (signed long int) l_over; //1周期：400パルス＊位相係数：4＊ギア比３　＝4800
+	r_enc = (signed long int) (GPTW2.GTCNT)
+			+ (signed long int) (USHRT_MAX) * (signed long int) r_over; //1周期：400パルス＊位相係数：4＊ギア比３　＝4800
 }
