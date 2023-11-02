@@ -44,7 +44,7 @@ void get_sensor(_sensor *baffa) {
 	R_Config_S12AD2_Stop();
 	R_Config_S12AD1_Stop();
 	R_Config_S12AD0_Stop();
-	SENLED1 = OFF;
+	SENLED1 = ON;
 	SENLED2 = OFF;
 	R_Config_S12AD0_Get_ValueResult(ADCHANNEL7, &temp1[0]);
 	R_Config_S12AD0_Get_ValueResult(ADCHANNEL0, &temp1[1]);

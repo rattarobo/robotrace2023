@@ -26,6 +26,7 @@
  * 公開変数
  **************************************************************************************************************/
  float battery_ave=0.0;
+ _sensor min,max;
  //車輪の回転距離、速度
 // typedef struct {
 //	 double distance[2];
@@ -66,6 +67,58 @@ _wheel check_dist_velo(_wheel previous){//距離を求める
 	 return temp;
  }
 
+void set_callibration(_sensorRaw *raw){//ラインセンサのキャリブレーション用の設定
+	char i;
+
+		for (i = 0; i < 10; i++) {
+			if (max.main[i] < raw->main[i]) {
+				max.main[i] = (float)raw->main[i];
+			}
+
+			if (min.main[i] > raw->main[i]) {
+				min.main[i] = (float)raw->main[i];
+			}
+		}
+
+			if (max.coner < raw->coner) {
+				max.coner = (float)raw->coner;
+			}
+
+			if (min.coner > raw->coner) {
+				min.coner = (float)raw->coner;
+			}
+			if (max.goal < raw->goal) {
+				max.goal = (float)raw->goal;
+			}
+
+			if (min.goal > raw->goal) {
+				min.goal = (float)raw->goal;
+			}
+
+}
+_sensor sensor_callibration(_sensorRaw *raw){//ラインセンサのキャリブレーション
+		_sensor get;
+		char i;
+
+		for (i = 0; i < 10; i++) {
+			get.main[i] = (float)(raw->main[i] - min.main[i])
+					/ (max.main[i] - min.main[i]);
+		}
+		get.goal=(float)(raw->goal-min.goal)/(max.goal - min.goal);
+		get.coner=(float)(raw->coner-min.coner)/(max.coner - min.coner);
+//		//前処理
+//		for (i = 4; i > 0; i--) {
+//			if ((get.main[i + 1] > 80 && get.main[i] < 80)
+//					|| get.main[i] == 0)
+//				get.main[i - 1] = 0;
+//		}
+//		for (i = 5; i < 9; i++) {
+//			if ((get.main[i - 1] > 80 && get.main[i] < 80)
+//					|| get.main[i] == 0)
+//				get.main[i + 1] = 0;
+//		}
+		return get;
+}
 /***************************************************************************************************************
  * 非公開関数
  **************************************************************************************************************/

@@ -1036,7 +1036,7 @@
             <Setting id="MultiIntCMIEnable" value="UnCheck"/>
             <Setting id="ClockDivision" value="Devide128"/>
             <Setting id="IntCMWIEnable" value="Enable"/>
-            <Setting id="IntervalValue" value="50"/>
+            <Setting id="IntervalValue" value="5"/>
             <Setting id="IntCMWIPriority" value="Level14"/>
         </Segment>
         <Segment component="com.renesas.smc.tools.swcomponent.codegenerator.port" id="Config_PORT" source="com.renesas.smc.tools.swcomponent.codegenerator.source">

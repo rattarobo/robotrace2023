@@ -9,16 +9,16 @@
 #define LAYER1_L1_AD_H_
 
 typedef struct {
-	short main[10];
-	short goal;
-	short coner;
+	int main[10];
+	int goal;
+	int coner;
 
-} _sensor;
+} _sensorRaw;
 
 
 extern long sum_battery;
-extern _sensor raw;
+extern _sensorRaw raw;
 void get_bat_vol(void);
-void get_sensor(_sensor *raw);
+void get_sensor(_sensorRaw *raw);
 
 #endif /* LAYER1_L1_AD_H_ */

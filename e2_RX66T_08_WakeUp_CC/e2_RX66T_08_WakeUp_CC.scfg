@@ -397,45 +397,45 @@
         <Item currentVect="255" defaultVect="255" id="GPTW2_GDTE2" priority="15" usedState="未使用"/>
     </tool>
     <tool id="Pins" version="1.0.1.0">
-        <pinItem allocation="7" comments="" direction="None" id="XTAL" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
-        <pinItem allocation="9" comments="" direction="None" id="EXTAL" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
-        <pinItem allocation="5" comments="" direction="None" id="P01" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
-        <pinItem allocation="64" comments="" direction="None" id="P11" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
-        <pinItem allocation="19" comments="" direction="None" id="PB4" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
-        <pinItem allocation="15" comments="" direction="None" id="PD4" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
-        <pinItem allocation="11" comments="" direction="None" id="PE2" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
+        <pinItem allocation="19" comments="" direction="O" id="PB4" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
         <pinItem allocation="30" comments="" direction="None" id="GTIOC4B" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
         <pinItem allocation="27" comments="" direction="None" id="GTIOC4A" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
+        <pinItem allocation="7" comments="" direction="None" id="XTAL" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
         <pinItem allocation="55" comments="" direction="None" id="AN107" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
         <pinItem allocation="14" comments="" direction="None" id="RXD1" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
+        <pinItem allocation="9" comments="" direction="None" id="EXTAL" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
         <pinItem allocation="54" comments="" direction="None" id="AN100" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
         <pinItem allocation="53" comments="" direction="None" id="AN101" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
         <pinItem allocation="52" comments="" direction="None" id="AN102" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
-        <pinItem allocation="37" comments="" direction="None" id="P72" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
-        <pinItem allocation="38" comments="" direction="None" id="P71" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
-        <pinItem allocation="35" comments="" direction="None" id="P74" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
-        <pinItem allocation="36" comments="" direction="None" id="P73" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
-        <pinItem allocation="33" comments="" direction="None" id="P76" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
-        <pinItem allocation="34" comments="" direction="None" id="P75" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
+        <pinItem allocation="21" comments="" direction="None" id="MTIOC0B" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
+        <pinItem allocation="37" comments="" direction="O" id="P72" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
+        <pinItem allocation="38" comments="" direction="O" id="P71" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
+        <pinItem allocation="35" comments="" direction="O" id="P74" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
+        <pinItem allocation="36" comments="" direction="O" id="P73" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
+        <pinItem allocation="33" comments="" direction="O" id="P76" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
+        <pinItem allocation="34" comments="" direction="O" id="P75" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
         <pinItem allocation="44" comments="" direction="None" id="AN216" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
         <pinItem allocation="43" comments="" direction="None" id="AN217" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
+        <pinItem allocation="15" comments="" direction="O" id="PD4" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
         <pinItem allocation="17" comments="" direction="None" id="GTIOC2A" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
+        <pinItem allocation="5" comments="" direction="O" id="P01" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
         <pinItem allocation="59" comments="" direction="None" id="AN007" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
+        <pinItem allocation="16" comments="" direction="None" id="TXD1" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
         <pinItem allocation="58" comments="" direction="None" id="AN000" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
+        <pinItem allocation="11" comments="" direction="I" id="PE2" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
         <pinItem allocation="57" comments="" direction="None" id="AN001" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
         <pinItem allocation="56" comments="" direction="None" id="AN002" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
-        <pinItem allocation="13" comments="" direction="None" id="GTIOC3B" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
-        <pinItem allocation="12" comments="" direction="None" id="GTIOC3A" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
-        <pinItem allocation="32" comments="" direction="None" id="P90" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
-        <pinItem allocation="31" comments="" direction="None" id="P91" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
-        <pinItem allocation="28" comments="" direction="None" id="P94" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
-        <pinItem allocation="29" comments="" direction="None" id="P93" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
-        <pinItem allocation="18" comments="" direction="None" id="GTIOC2B" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
-        <pinItem allocation="21" comments="" direction="None" id="MTIOC0B" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
-        <pinItem allocation="16" comments="" direction="None" id="TXD1" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
         <pinItem allocation="51" comments="" direction="None" id="AN200" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
         <pinItem allocation="50" comments="" direction="None" id="AN201" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
         <pinItem allocation="49" comments="" direction="None" id="AN202" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
+        <pinItem allocation="13" comments="" direction="None" id="GTIOC3B" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
+        <pinItem allocation="12" comments="" direction="None" id="GTIOC3A" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
+        <pinItem allocation="32" comments="" direction="O" id="P90" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
+        <pinItem allocation="31" comments="" direction="O" id="P91" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
+        <pinItem allocation="28" comments="" direction="O" id="P94" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
+        <pinItem allocation="29" comments="" direction="O" id="P93" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
+        <pinItem allocation="64" comments="" direction="O" id="P11" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
+        <pinItem allocation="18" comments="" direction="None" id="GTIOC2B" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
     </tool>
     <tool id="Summary" version="1.0.0.0">
         <option id="com.renesas.smc.code.path" value="src\smc_gen"/>
@@ -564,7 +564,7 @@
                     <item id="Devide512" input="" vlaue="0"/>
                 </option>
                 <option enabled="true" id="IntervalValue" selection="IntervalValue">
-                    <item id="IntervalValue" input="50" vlaue="23437"/>
+                    <item id="IntervalValue" input="5" vlaue="2343"/>
                 </option>
                 <option enabled="true" id="IntervalUnit" selection="ms">
                     <item id="ms" input="" vlaue="0"/>
