@@ -72,8 +72,8 @@ void wake_up(void){
 	mycommand_value.velocity[0]=0.00;
 	mycommand_value.velocity[1]=0.00;
 	for(short i=0;i<50;i++){
-		mycommand_value.distance[0]=-10.00;
-		mycommand_value.distance[1]=-10.00;
+		mycommand_value.distance[0]-=10.00;
+		mycommand_value.distance[1]-=10.00;
 		 previous_value=check_dist_velo(previous_value);
 		change_motor_velocity(mycommand_value,previous_value);
 		sprintf(print_str, "\r%f=%f\r\n",previous_value.distance[0],previous_value.distance[1]);
