@@ -56,69 +56,69 @@ void R_Pins_Create(void)
     R_BSP_RegisterProtectDisable(BSP_REG_PROTECT_MPC);
 
     /* Set AN000 pin */
+    MPC.P40PFS.BYTE = 0x80U;
     PORT4.PMR.BYTE &= 0xFEU;
     PORT4.PDR.BYTE &= 0xFEU;
-    MPC.P40PFS.BYTE = 0x80U;
 
     /* Set AN001 pin */
+    MPC.P41PFS.BYTE = 0x80U;
     PORT4.PMR.BYTE &= 0xFDU;
     PORT4.PDR.BYTE &= 0xFDU;
-    MPC.P41PFS.BYTE = 0x80U;
 
     /* Set AN002 pin */
+    MPC.P42PFS.BYTE = 0x80U;
     PORT4.PMR.BYTE &= 0xFBU;
     PORT4.PDR.BYTE &= 0xFBU;
-    MPC.P42PFS.BYTE = 0x80U;
 
     /* Set AN007 pin */
+    MPC.PH0PFS.BYTE = 0x80U;
     PORTH.PMR.BYTE &= 0xFEU;
     PORTH.PDR.BYTE &= 0xFEU;
-    MPC.PH0PFS.BYTE = 0x80U;
 
     /* Set AN100 pin */
+    MPC.P44PFS.BYTE = 0x80U;
     PORT4.PMR.BYTE &= 0xEFU;
     PORT4.PDR.BYTE &= 0xEFU;
-    MPC.P44PFS.BYTE = 0x80U;
 
     /* Set AN101 pin */
+    MPC.P45PFS.BYTE = 0x80U;
     PORT4.PMR.BYTE &= 0xDFU;
     PORT4.PDR.BYTE &= 0xDFU;
-    MPC.P45PFS.BYTE = 0x80U;
 
     /* Set AN102 pin */
+    MPC.P46PFS.BYTE = 0x80U;
     PORT4.PMR.BYTE &= 0xBFU;
     PORT4.PDR.BYTE &= 0xBFU;
-    MPC.P46PFS.BYTE = 0x80U;
 
     /* Set AN107 pin */
+    MPC.PH4PFS.BYTE = 0x80U;
     PORTH.PMR.BYTE &= 0xEFU;
     PORTH.PDR.BYTE &= 0xEFU;
-    MPC.PH4PFS.BYTE = 0x80U;
 
     /* Set AN200 pin */
+    MPC.P52PFS.BYTE = 0x80U;
     PORT5.PMR.BYTE &= 0xFBU;
     PORT5.PDR.BYTE &= 0xFBU;
-    MPC.P52PFS.BYTE = 0x80U;
 
     /* Set AN201 pin */
+    MPC.P53PFS.BYTE = 0x80U;
     PORT5.PMR.BYTE &= 0xF7U;
     PORT5.PDR.BYTE &= 0xF7U;
-    MPC.P53PFS.BYTE = 0x80U;
 
     /* Set AN202 pin */
+    MPC.P54PFS.BYTE = 0x80U;
     PORT5.PMR.BYTE &= 0xEFU;
     PORT5.PDR.BYTE &= 0xEFU;
-    MPC.P54PFS.BYTE = 0x80U;
 
     /* Set AN216 pin */
+    MPC.P20PFS.BYTE = 0x80U;
     PORT2.PMR.BYTE &= 0xFEU;
     PORT2.PDR.BYTE &= 0xFEU;
-    MPC.P20PFS.BYTE = 0x80U;
 
     /* Set AN217 pin */
+    MPC.P21PFS.BYTE = 0x80U;
     PORT2.PMR.BYTE &= 0xFDU;
     PORT2.PDR.BYTE &= 0xFDU;
-    MPC.P21PFS.BYTE = 0x80U;
 
     /* Set GTIOC2A pin */
     MPC.PB6PFS.BYTE = 0x14U;

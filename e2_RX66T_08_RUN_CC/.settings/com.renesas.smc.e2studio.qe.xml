@@ -680,7 +680,7 @@
             <Setting id="CntSrc17Dn" value="Disable"/>
             <Setting id="S12AD0MntSig" value="MntAup"/>
             <Setting id="CntSrc21Stp" value="Disable"/>
-            <Setting id="GtccrbBufOpt" value="NoBufOpt"/>
+            <Setting id="GtccrbBufOpt" value="SingleBuf"/>
             <Setting id="GTCIVPty" value="Level15"/>
             <Setting id="CntSrc12_13Up" value="Disable"/>
             <Setting id="CntSrc20ICA" value="Disable"/>
@@ -702,11 +702,11 @@
             <Setting id="LnkGTCIASkpFun" value="Disable"/>
             <Setting id="GTADTRAUpSrt" value="Disable"/>
             <Setting id="CntSrc10_11Clr" value="Disable"/>
-            <Setting id="GtccraBufOpt" value="NoBufOpt"/>
+            <Setting id="GtccraBufOpt" value="SingleBuf"/>
             <Setting id="CntSrc14_15Up" value="Disable"/>
             <Setting id="CntSrc19Srt" value="Disable"/>
-            <Setting id="GtccraVal" value="100"/>
-            <Setting id="GtccrbCndOut" value="Retain"/>
+            <Setting id="GtccraVal" value="30000"/>
+            <Setting id="GtccrbCndOut" value="Out0"/>
             <Setting id="LnkGTCIBSkpFun" value="Disable"/>
             <Setting id="ExtIntSkpGTCCRC" value="NoExtSkp"/>
             <Setting id="ExtIntSkpGTCCRD" value="NoExtSkp"/>
@@ -733,7 +733,7 @@
             <Setting id="GtccrfVal" value="100"/>
             <Setting id="GTCICPty" value="Level15"/>
             <Setting id="CntSrc23ICA" value="Disable"/>
-            <Setting id="GtccrbCmmOut" value="OutToggol"/>
+            <Setting id="GtccrbCmmOut" value="Out1"/>
             <Setting id="CntSrc18Stp" value="Disable"/>
             <Setting id="GTADTRBUpSrt" value="Disable"/>
             <Setting id="GTADTRADwnSrt" value="Disable"/>
@@ -767,7 +767,7 @@
             <Setting id="CntInit" value="0"/>
             <Setting id="CntSrc16ICB" value="Disable"/>
             <Setting id="CntSrc16ICA" value="Disable"/>
-            <Setting id="GtccraCmmOut" value="OutToggol"/>
+            <Setting id="GtccraCmmOut" value="Out1"/>
             <Setting id="CntSrc0_1Srt" value="Disable"/>
             <Setting id="CntSrc23Stp" value="Disable"/>
             <Setting id="CntSrc0_1Up" value="Disable"/>
@@ -779,12 +779,12 @@
             <Setting id="ExtIntSkp1Cn" value="Skip1"/>
             <Setting id="CntSrc17Stp" value="Disable"/>
             <Setting id="CntSrc0_1Dn" value="Disable"/>
-            <Setting id="GtccraCndOut" value="Retain"/>
+            <Setting id="GtccraCndOut" value="Out0"/>
             <Setting id="CntSrc6_7Up" value="Disable"/>
             <Setting id="LnkGTCIFSkpFun" value="Disable"/>
             <Setting id="CntSrc2_3Stp" value="Disable"/>
             <Setting id="CntSrc20Clr" value="Disable"/>
-            <Setting id="GtccrbVal" value="100"/>
+            <Setting id="GtccrbVal" value="30000"/>
             <Setting id="NozFltGtccrBClk" value="PclkC"/>
             <Setting id="CntSrc8_9ICA" value="Disable"/>
             <Setting id="CntSrc8_9ICB" value="Disable"/>
@@ -1034,7 +1034,7 @@
         <Segment component="com.renesas.smc.tools.swcomponent.codegenerator.cmtw" id="Config_CMT1" source="com.renesas.smc.tools.swcomponent.codegenerator.source">
             <Setting id="IntervalUnit" value="ms"/>
             <Setting id="MultiIntCMIEnable" value="UnCheck"/>
-            <Setting id="ClockDivision" value="Devide128"/>
+            <Setting id="ClockDivision" value="Devide32"/>
             <Setting id="IntCMWIEnable" value="Enable"/>
             <Setting id="IntervalValue" value="5"/>
             <Setting id="IntCMWIPriority" value="Level14"/>

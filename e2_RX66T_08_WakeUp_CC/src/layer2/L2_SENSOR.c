@@ -20,7 +20,7 @@
 /***************************************************************************************************************
  * 変数
  **************************************************************************************************************/
-
+_wheel reset={0.,0.,0.,0.};
 
 /***************************************************************************************************************
  * 公開変数
@@ -52,18 +52,14 @@
 _wheel check_dist_velo(_wheel previous){//距離を求める
 	 _wheel temp;
 	 //距離を求める
-	 temp.distance[0]=(double)(l_enc* 12. / 42.  / 400.);//距離*ギア比*カウント/１回転当たりの信号量;左
-	 temp.distance[1]=(double)(r_enc* 12. / 42.  / 400.);//距離*ギア比*カウント/１回転当たりの信号量;右
-
+	 temp.distance[0]=(double)(l_enc* 12. / 42.  / 400.*22*3.14159);//距離*ギア比*カウント/１回転当たりの信号量;左
+	 temp.distance[1]=(double)(r_enc* 12. / 42.  / 400.*22*3.14159);//距離*ギア比*カウント/１回転当たりの信号量;右
+	 temp.distance[0]-=reset.distance[0];
+	 temp.distance[1]-=reset.distance[1];
 	 //速度を求める
-	 temp.velocity[0]=(float)(temp.distance[0]-previous.distance[0]);//差分*dt左
-	 temp.velocity[1]=(float)(temp.distance[1]-previous.distance[1]);//差分*dt右
-	 if (temp.velocity[0]>10 ||temp.velocity[0]<-10){
-		 temp.velocity[0]=previous.distance[0];
-	 }
-	 if (temp.velocity[1]>10 ||temp.velocity[1]<-10){
-		 temp.velocity[1]=previous.distance[1];
-	 }
+	 temp.velocity[0]=(float)(temp.distance[0]-previous.distance[0])/DT;//差分*dt左
+	 temp.velocity[1]=(float)(temp.distance[1]-previous.distance[1])/DT;//差分*dt右
+
 	 return temp;
  }
 
@@ -99,25 +95,49 @@ void set_callibration(_sensorRaw *raw){//ラインセンサのキャリブレー
 _sensor sensor_callibration(_sensorRaw *raw){//ラインセンサのキャリブレーション
 		_sensor get;
 		char i;
+		char temp=0;
 
 		for (i = 0; i < 10; i++) {
 			get.main[i] = (float)(raw->main[i] - min.main[i])
 					/ (max.main[i] - min.main[i]);
 		}
-		get.goal=(float)(raw->goal-min.goal)/(max.goal - min.goal);
+		get.goal= (float)(raw->goal-min.goal) /(max.goal - min.goal);
 		get.coner=(float)(raw->coner-min.coner)/(max.coner - min.coner);
 //		//前処理
 //		for (i = 4; i > 0; i--) {
-//			if ((get.main[i + 1] > 80 && get.main[i] < 80)
+//			if ((get.main[i + 1] > 0.4 && get.main[i] < 0.4)
 //					|| get.main[i] == 0)
 //				get.main[i - 1] = 0;
 //		}
 //		for (i = 5; i < 9; i++) {
-//			if ((get.main[i - 1] > 80 && get.main[i] < 80)
+//			if ((get.main[i - 1] > 0.4 && get.main[i] < 0.4)
 //					|| get.main[i] == 0)
 //				get.main[i + 1] = 0;
 //		}
+		temp=0;
+		for (i = 1; i <10; i++) {
+			if (get.main[temp]<get.main[i]){
+				temp=i;
+			}
+		}
+		for (i = 0; i <10; i++) {
+			if (i!=temp&&i!=temp-1&&i!=temp+1){
+				get.main[i]=0;
+			}
+		}
 		return get;
+}
+float get_sensor_angle(_sensor *get){
+	float angle,norm=0.;
+	angle =A0*get->main[0]+A1*get->main[1]+A2*get->main[2]+A3*get->main[3]+A4*get->main[4]+A5*+get->main[5]+A6*get->main[6]+A7*get->main[7]+A8*get->main[8]+A9*get->main[9];
+
+	for(char i=0;i<10;i++)norm+=get->main[i];
+	angle/=norm;
+	return angle;
+}
+void reset_value(_wheel previous){
+	reset.distance[0]=previous.distance[0];
+	reset.distance[1]=previous.distance[1];
 }
 /***************************************************************************************************************
  * 非公開関数

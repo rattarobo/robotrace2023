@@ -9,9 +9,9 @@
 #define LAYER1_L1_GPTW_H_
 
 
-#define USHRT_MAX 399999
-extern signed short r_over;
-extern signed short l_over;
+#define USHRT_MAX 299999
+extern  short r_over;
+extern  short l_over;
 extern long l_enc,r_enc;
 
 

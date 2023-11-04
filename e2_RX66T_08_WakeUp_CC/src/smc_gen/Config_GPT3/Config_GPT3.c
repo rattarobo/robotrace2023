@@ -197,8 +197,7 @@ void R_Config_GPT3_Create(void)
 
 /***********************************************************************************************************************
 * Function Name: R_Config_GPT3_Start
-* Description  : This function starts the GPT3 channel counter. Note that this function is empty
-*                if Count start sources setting is not enabled and no interrupt is configured for GPT3
+* Description  : This function starts the GPT3 channel counter
 * Arguments    : None
 * Return Value : None
 ***********************************************************************************************************************/
@@ -223,8 +222,7 @@ void R_Config_GPT3_Start(void)
 
 /***********************************************************************************************************************
 * Function Name: R_Config_GPT3_Stop
-* Description  : This function stops the GPT3 channel counter. Note that this function is empty
-*                if Count stop sources setting is not enabled and no interrupt is configured for GPT3
+* Description  : This function stops the GPT3 channel counter
 * Arguments    : None
 * Return Value : None
 ***********************************************************************************************************************/

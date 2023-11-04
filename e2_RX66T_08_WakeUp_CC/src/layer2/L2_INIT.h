@@ -10,4 +10,6 @@
 
 void init(void);
 
+extern _wheel mycommand_value;
+extern _wheel previous_value;
 #endif /* LAYER2_L2_INIT_H_ */

@@ -6,7 +6,11 @@
  */
 
 #include "r_smc_entry.h"
+#include "L1_AD.h"
+#include "L2_SENSOR.h"
 
+_wheel mycommand_value={0.,0.,0.,0.};
+_wheel previous_value={0.,0.,0.,0.};
 
 void init(void){
 	/*Enable CMT operation*/
