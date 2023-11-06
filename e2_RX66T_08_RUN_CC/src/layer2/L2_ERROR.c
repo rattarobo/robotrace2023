@@ -33,25 +33,25 @@ void error_message(_error *error){
 	static char print_error[80];
 	while(error->battery==1){
 		sprintf(print_error, "\r\n low battery\r\n");
-		R_DMAC1_AsyncTransmit((uint8_t *) print_error, (uint16_t) strlen(print_error));
+//		R_DMAC1_AsyncTransmit((uint8_t *) print_error, (uint16_t) strlen(print_error));
 
 		sprintf(print_error," bat=%d\r\n",battery_ave);
-		R_DMAC1_AsyncTransmit((uint8_t *) print_error, (uint16_t) strlen(print_error));
+//		R_DMAC1_AsyncTransmit((uint8_t *) print_error, (uint16_t) strlen(print_error));
 		led.led1=ON;
 	}
 	if(error->l_enc==1){
 		sprintf(print_error, "\r\n left encoder can not read!!\r\n");
-		R_DMAC1_AsyncTransmit((uint8_t *) print_error, (uint16_t) strlen(print_error));
+//		R_DMAC1_AsyncTransmit((uint8_t *) print_error, (uint16_t) strlen(print_error));
 		led.led2=ON;
 	}
 	if(error->r_enc==1){
 		sprintf(print_error, "\r\n right encoder can not read!!\r\n");
-		R_DMAC1_AsyncTransmit((uint8_t *) print_error, (uint16_t) strlen(print_error));
+//		R_DMAC1_AsyncTransmit((uint8_t *) print_error, (uint16_t) strlen(print_error));
 		led.led3=ON;
 	}
 	if(error->gyro==1){
 			sprintf(print_error, "\r\n gyro can not read!!\r\n");
-			R_DMAC1_AsyncTransmit((uint8_t *) print_error, (uint16_t) strlen(print_error));
+//			R_DMAC1_AsyncTransmit((uint8_t *) print_error, (uint16_t) strlen(print_error));
 			led.led4=ON;
 	}
 

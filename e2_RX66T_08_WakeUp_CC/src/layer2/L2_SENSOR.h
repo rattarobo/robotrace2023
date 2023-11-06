@@ -16,16 +16,24 @@
 #define BATTERY_MAX	8.4
 #define BATTERY_COUNT 50
 
-#define RP 8 //1.14
-#define RI 0 //0
-#define RD 3 //(0.203*5)
 
-#define LP 8.5 //1.14
-#define LI 0 //0
-#define LD 3.5 //(0.203*5)
 
 #define  DT  0.005
 #define  DT2 0.05
+/*
+*角度用のゲイン右ー＞左
+*/
+#define A0 (-0.365308975*0)
+#define A1 (-0.279091932*0)
+#define A2 (-0.188405306)
+#define A3 (-0.095140467)
+#define A4 (-0.005)
+#define A5 (0.005)
+#define A6 (0.095046088)
+#define A7 (0.189048508)
+#define A8 (0.279091932)
+#define A9 (0.364976597*0)
+
 /***********************************************************************************************************
  * 構造体宣言
  **********************************************************************************************************/
@@ -48,6 +56,8 @@ extern void check_battery(_error *error);
 extern _wheel check_dist_velo(_wheel previous);
 extern void set_callibration(_sensorRaw *raw);
 extern _sensor sensor_callibration(_sensorRaw *raw);
+extern float get_sensor_angle(_sensor *get);
+extern void reset_value(_wheel previous);
 /***********************************************************************************************************
  * extern 変数宣言
  **********************************************************************************************************/

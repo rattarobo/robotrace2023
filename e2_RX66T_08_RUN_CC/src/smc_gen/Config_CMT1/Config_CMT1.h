@@ -39,10 +39,10 @@ Macro definitions (Register bit)
 /***********************************************************************************************************************
 Macro definitions
 ***********************************************************************************************************************/
-#define CMT1_PCLK_COUNTER_DIVISION          (128)
+#define CMT1_PCLK_COUNTER_DIVISION          (32)
 
 /* Compare Match Constant Register (CMCOR) */
-#define _0927_CMT1_CMCOR_VALUE              (0x0927U)
+#define _249E_CMT1_CMCOR_VALUE              (0x249EU)
 
 /***********************************************************************************************************************
 Typedef definitions

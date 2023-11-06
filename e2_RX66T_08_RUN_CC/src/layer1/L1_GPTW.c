@@ -10,7 +10,7 @@
 
 
 
-void GPTW_PWM(long left_PWM, long right_PWM){
+void GPTW_PWM(unsigned long left_PWM, unsigned long right_PWM){
 	R_Config_GPT4_Stop();
 	GPTW4.GTCCRE=left_PWM;//　GTIOC4B 左
 	GPTW4.GTCCRC=right_PWM;//GTIOC4A 右

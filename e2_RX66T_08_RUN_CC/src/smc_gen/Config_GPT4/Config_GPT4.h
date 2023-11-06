@@ -42,8 +42,8 @@ Macro definitions
 #define GPT4_PCLK_COUNTER_DIVISION                      (2)
 #define _0000EA5F_GPT4_CYCLE_VALUE                      (0x0000EA5FUL) /* GPT4 cycle register value */
 #define _00000000_GPT4_INIT_COUNT                       (0x00000000UL) /* GPT4 initial counter value */
-#define _00000064_GPT4_COMP_MATCH_A_VALUE               (0x00000064UL) /* GPT4 compare match A value */
-#define _00000064_GPT4_COMP_MATCH_B_VALUE               (0x00000064UL) /* GPT4 compare match B value */
+#define _00007530_GPT4_COMP_MATCH_A_VALUE               (0x00007530UL) /* GPT4 compare match A value */
+#define _00007530_GPT4_COMP_MATCH_B_VALUE               (0x00007530UL) /* GPT4 compare match B value */
 #define _00000064_GPT4_COMP_MATCH_C_VALUE               (0x00000064UL) /* GPT4 compare match C value */
 #define _00000064_GPT4_COMP_MATCH_D_VALUE               (0x00000064UL) /* GPT4 compare match D value */
 #define _00000064_GPT4_COMP_MATCH_E_VALUE               (0x00000064UL) /* GPT4 compare match E value */

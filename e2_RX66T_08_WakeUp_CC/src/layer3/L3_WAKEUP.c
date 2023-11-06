@@ -17,8 +17,8 @@
 
 #include "L3_WAKEUP.h"
 
-_wheel mycommand_value={0.,0.,0.,0.};
-_wheel previous_value={0.,0.,0.,0.};
+//_wheel mycommand_value={0.,0.,0.,0.};
+//_wheel previous_value={0.,0.,0.,0.};
 
 void wake_up(void){
 	/*
@@ -42,46 +42,62 @@ void wake_up(void){
 	 */
 	mycommand_value.distance[0]=0.;
 	mycommand_value.distance[1]=0.;
-	mycommand_value.velocity[0]=0.3;
-	mycommand_value.velocity[1]=0.3;
-	for(short i=0;i<50;i++){
-		previous_value=check_dist_velo(previous_value);
-		change_motor_velocity(mycommand_value,previous_value);
-		sprintf(print_str, "\r%f=%f\r\n",previous_value.velocity[0],previous_value.velocity[1]);
-		R_DMAC1_AsyncTransmit((uint8_t *) print_str, (uint16_t) strlen(print_str));
-		set_callibration(&raw);
-		R_BSP_SoftwareDelay(10,BSP_DELAY_MILLISECS );
-	}
-
-	mycommand_value.distance[0]=0.;
-	mycommand_value.distance[1]=0.;
-	mycommand_value.velocity[0]=0.;
-	mycommand_value.velocity[1]=0.;
+	mycommand_value.velocity[0]=0.0;
+	mycommand_value.velocity[1]=0.0;
 	for(short i=0;i<100;i++){
-		 previous_value=check_dist_velo(previous_value);
-		change_motor_velocity(mycommand_value,previous_value);
-		sprintf(print_str, "\r%f=%f\r\n",previous_value.distance[0],previous_value.distance[1]);
-		R_DMAC1_AsyncTransmit((uint8_t *) print_str, (uint16_t) strlen(print_str));
-		set_callibration(&raw);
-		R_BSP_SoftwareDelay(10,BSP_DELAY_MILLISECS );
-	}
 
-	mycommand_value.distance[0]=0.;
-	mycommand_value.distance[1]=0.;
-	mycommand_value.velocity[0]=-0.3;
-	mycommand_value.velocity[1]=-0.3;
-	for(short i=0;i<50;i++){
-		 previous_value=check_dist_velo(previous_value);
-		change_motor_velocity(mycommand_value,previous_value);
 		sprintf(print_str, "\r%f=%f\r\n",previous_value.distance[0],previous_value.distance[1]);
 		R_DMAC1_AsyncTransmit((uint8_t *) print_str, (uint16_t) strlen(print_str));
 		set_callibration(&raw);
 		R_BSP_SoftwareDelay(10,BSP_DELAY_MILLISECS );
 	}
+//
+////	mycommand_value.distance[0]=500.;
+////	mycommand_value.distance[1]=500.;
+	mycommand_value.velocity[0]=0.1;
+	mycommand_value.velocity[1]=0.1;
+	for(short i=0;i<100;i++){
+		mycommand_value.distance[0]+=5.;
+		mycommand_value.distance[1]+=5.;
+
+
+		sprintf(print_str, "\r%f=%f\r\n",previous_value.distance[0],previous_value.distance[1]);
+		R_DMAC1_AsyncTransmit((uint8_t *) print_str, (uint16_t) strlen(print_str));
+		set_callibration(&raw);
+		R_BSP_SoftwareDelay(10,BSP_DELAY_MILLISECS );
+	}
+//
+//
+//	mycommand_value.velocity[0]=0.1;
+//	mycommand_value.velocity[1]=0.1;
+//	for(short i=0;i<40;i++){
+//		mycommand_value.distance[0]-=10.00;
+//		mycommand_value.distance[1]-=10.00;
+//		 previous_value=check_dist_velo(previous_value);
+//		change_motor_velocity(mycommand_value,previous_value);
+////		sprintf(print_str, "\r%f=%f\r\n",previous_value.distance[0],previous_value.distance[1]);
+////		R_DMAC1_AsyncTransmit((uint8_t *) print_str, (uint16_t) strlen(print_str));
+//		set_callibration(&raw);
+//		R_BSP_SoftwareDelay(25,BSP_DELAY_MILLISECS );
+//	}
 	mycommand_value.distance[0]=0.;
 	mycommand_value.distance[1]=0.;
 	mycommand_value.velocity[0]=0.;
 	mycommand_value.velocity[1]=0.;
+//	for(short i=0;i<40;i++){
+//			 previous_value=check_dist_velo(previous_value);
+//			change_motor_velocity(mycommand_value,previous_value);
+//	//		sprintf(print_str, "\r%f=%f\r\n",previous_value.distance[0],previous_value.distance[1]);
+//	//		R_DMAC1_AsyncTransmit((uint8_t *) print_str, (uint16_t) strlen(print_str));
+//			set_callibration(&raw);
+//			R_BSP_SoftwareDelay(25,BSP_DELAY_MILLISECS );
+//		}
+
+	for(short i=0;i<400*3;i++){
+			set_callibration(&raw);
+			R_BSP_SoftwareDelay(5,BSP_DELAY_MILLISECS );
+		}
+	reset_value(previous_value);
 	/*
 	 * センサー値の取得
 	 */
@@ -104,4 +120,5 @@ void wake_up(void){
 //	change_motor_velocity(command_value,previous_value);
 //	for(int j=0;j<1000;j++);;
 //	}
+
 }

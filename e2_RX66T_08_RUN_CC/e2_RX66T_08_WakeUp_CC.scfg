@@ -397,17 +397,20 @@
         <Item currentVect="255" defaultVect="255" id="GPTW2_GDTE2" priority="15" usedState="未使用"/>
     </tool>
     <tool id="Pins" version="1.0.1.0">
+        <pinItem allocation="7" comments="" direction="None" id="XTAL" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
+        <pinItem allocation="9" comments="" direction="None" id="EXTAL" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
+        <pinItem allocation="5" comments="" direction="O" id="P01" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
+        <pinItem allocation="64" comments="" direction="O" id="P11" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
         <pinItem allocation="19" comments="" direction="O" id="PB4" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
+        <pinItem allocation="15" comments="" direction="O" id="PD4" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
+        <pinItem allocation="11" comments="" direction="I" id="PE2" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
         <pinItem allocation="30" comments="" direction="None" id="GTIOC4B" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
         <pinItem allocation="27" comments="" direction="None" id="GTIOC4A" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
-        <pinItem allocation="7" comments="" direction="None" id="XTAL" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
         <pinItem allocation="55" comments="" direction="None" id="AN107" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
         <pinItem allocation="14" comments="" direction="None" id="RXD1" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
-        <pinItem allocation="9" comments="" direction="None" id="EXTAL" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
         <pinItem allocation="54" comments="" direction="None" id="AN100" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
         <pinItem allocation="53" comments="" direction="None" id="AN101" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
         <pinItem allocation="52" comments="" direction="None" id="AN102" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
-        <pinItem allocation="21" comments="" direction="None" id="MTIOC0B" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
         <pinItem allocation="37" comments="" direction="O" id="P72" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
         <pinItem allocation="38" comments="" direction="O" id="P71" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
         <pinItem allocation="35" comments="" direction="O" id="P74" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
@@ -416,26 +419,23 @@
         <pinItem allocation="34" comments="" direction="O" id="P75" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
         <pinItem allocation="44" comments="" direction="None" id="AN216" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
         <pinItem allocation="43" comments="" direction="None" id="AN217" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
-        <pinItem allocation="15" comments="" direction="O" id="PD4" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
         <pinItem allocation="17" comments="" direction="None" id="GTIOC2A" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
-        <pinItem allocation="5" comments="" direction="O" id="P01" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
         <pinItem allocation="59" comments="" direction="None" id="AN007" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
-        <pinItem allocation="16" comments="" direction="None" id="TXD1" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
         <pinItem allocation="58" comments="" direction="None" id="AN000" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
-        <pinItem allocation="11" comments="" direction="I" id="PE2" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
         <pinItem allocation="57" comments="" direction="None" id="AN001" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
         <pinItem allocation="56" comments="" direction="None" id="AN002" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
-        <pinItem allocation="51" comments="" direction="None" id="AN200" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
-        <pinItem allocation="50" comments="" direction="None" id="AN201" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
-        <pinItem allocation="49" comments="" direction="None" id="AN202" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
         <pinItem allocation="13" comments="" direction="None" id="GTIOC3B" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
         <pinItem allocation="12" comments="" direction="None" id="GTIOC3A" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
         <pinItem allocation="32" comments="" direction="O" id="P90" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
         <pinItem allocation="31" comments="" direction="O" id="P91" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
         <pinItem allocation="28" comments="" direction="O" id="P94" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
         <pinItem allocation="29" comments="" direction="O" id="P93" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
-        <pinItem allocation="64" comments="" direction="O" id="P11" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
         <pinItem allocation="18" comments="" direction="None" id="GTIOC2B" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
+        <pinItem allocation="21" comments="" direction="None" id="MTIOC0B" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
+        <pinItem allocation="16" comments="" direction="None" id="TXD1" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
+        <pinItem allocation="51" comments="" direction="None" id="AN200" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
+        <pinItem allocation="50" comments="" direction="None" id="AN201" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
+        <pinItem allocation="49" comments="" direction="None" id="AN202" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
     </tool>
     <tool id="Summary" version="1.0.0.0">
         <option id="com.renesas.smc.code.path" value="src\smc_gen"/>
@@ -557,14 +557,14 @@
         <configuration apiMode="FULL_API" id="6541191f-f40c-4349-8eef-2a145000bfa1" inuse="true" name="Config_CMT1">
             <allocatable id="CMT1">
                 <isocket id="CountingClock" selection="Clock.tool_clock_pclkb" value="6.0E7"/>
-                <option enabled="true" id="ClockDivision" selection="Devide128">
+                <option enabled="true" id="ClockDivision" selection="Devide32">
                     <item id="Devide8" input="" vlaue="0"/>
                     <item id="Devide32" input="" vlaue="0"/>
                     <item id="Devide128" input="" vlaue="0"/>
                     <item id="Devide512" input="" vlaue="0"/>
                 </option>
                 <option enabled="true" id="IntervalValue" selection="IntervalValue">
-                    <item id="IntervalValue" input="5" vlaue="2343"/>
+                    <item id="IntervalValue" input="5" vlaue="9374"/>
                 </option>
                 <option enabled="true" id="IntervalUnit" selection="ms">
                     <item id="ms" input="" vlaue="0"/>
@@ -4165,9 +4165,9 @@
                     <item id="InputCpt" input="" vlaue="0"/>
                 </option>
                 <option enabled="true" id="GtccraVal" selection="GtccraVal">
-                    <item id="GtccraVal" input="100" vlaue="100"/>
+                    <item id="GtccraVal" input="30000" vlaue="30000"/>
                 </option>
-                <option enabled="true" id="GtccraBufOpt" selection="NoBufOpt">
+                <option enabled="true" id="GtccraBufOpt" selection="SingleBuf">
                     <item id="NoBufOpt" input="" vlaue="0"/>
                     <item id="SingleBuf" input="" vlaue="0"/>
                     <item id="DoubleBuf" input="" vlaue="0"/>
@@ -4205,13 +4205,13 @@
                     <item id="Item11" input="" vlaue="0"/>
                     <item id="Retain" input="" vlaue="0"/>
                 </option>
-                <option enabled="true" id="GtccraCmmOut" selection="OutToggol">
+                <option enabled="true" id="GtccraCmmOut" selection="Out1">
                     <item id="Retain" input="" vlaue="0"/>
                     <item id="Out0" input="" vlaue="0"/>
                     <item id="Out1" input="" vlaue="0"/>
                     <item id="OutToggol" input="" vlaue="0"/>
                 </option>
-                <option enabled="true" id="GtccraCndOut" selection="Retain">
+                <option enabled="true" id="GtccraCndOut" selection="Out0">
                     <item id="Retain" input="" vlaue="0"/>
                     <item id="Out0" input="" vlaue="0"/>
                     <item id="Out1" input="" vlaue="0"/>
@@ -4306,9 +4306,9 @@
                     <item id="InputCpt" input="" vlaue="0"/>
                 </option>
                 <option enabled="true" id="GtccrbVal" selection="GtccrbVal">
-                    <item id="GtccrbVal" input="100" vlaue="100"/>
+                    <item id="GtccrbVal" input="30000" vlaue="30000"/>
                 </option>
-                <option enabled="true" id="GtccrbBufOpt" selection="NoBufOpt">
+                <option enabled="true" id="GtccrbBufOpt" selection="SingleBuf">
                     <item id="NoBufOpt" input="" vlaue="0"/>
                     <item id="SingleBuf" input="" vlaue="0"/>
                     <item id="DoubleBuf" input="" vlaue="0"/>
@@ -4346,13 +4346,13 @@
                     <item id="Item11" input="" vlaue="0"/>
                     <item id="Retain" input="" vlaue="0"/>
                 </option>
-                <option enabled="true" id="GtccrbCmmOut" selection="OutToggol">
+                <option enabled="true" id="GtccrbCmmOut" selection="Out1">
                     <item id="Retain" input="" vlaue="0"/>
                     <item id="Out0" input="" vlaue="0"/>
                     <item id="Out1" input="" vlaue="0"/>
                     <item id="OutToggol" input="" vlaue="0"/>
                 </option>
-                <option enabled="true" id="GtccrbCndOut" selection="Retain">
+                <option enabled="true" id="GtccrbCndOut" selection="Out0">
                     <item id="Retain" input="" vlaue="0"/>
                     <item id="Out0" input="" vlaue="0"/>
                     <item id="Out1" input="" vlaue="0"/>

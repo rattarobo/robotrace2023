@@ -30,7 +30,7 @@ void main(void);
 void main(void)
 {
 	wake_up();
-	RUN();
+//	RUN();
 
 
 }

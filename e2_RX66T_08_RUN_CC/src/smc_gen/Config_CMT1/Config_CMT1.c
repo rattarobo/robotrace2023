@@ -61,10 +61,10 @@ void R_Config_CMT1_Create(void)
     MSTP(CMT1) = 0U;
 
     /* Set control registers */
-    CMT1.CMCR.WORD = _0002_CMT_CMCR_CLOCK_PCLK128 | _0040_CMT_CMCR_CMIE_ENABLE | _0080_CMT_CMCR_DEFAULT;
+    CMT1.CMCR.WORD = _0001_CMT_CMCR_CLOCK_PCLK32 | _0040_CMT_CMCR_CMIE_ENABLE | _0080_CMT_CMCR_DEFAULT;
 
     /* Set compare match register */
-    CMT1.CMCOR = _0927_CMT1_CMCOR_VALUE;
+    CMT1.CMCOR = _249E_CMT1_CMCOR_VALUE;
 
     /* Set CMI1 priority level */
     IPR(CMT1,CMI1) = _0E_CMT_PRIORITY_LEVEL14;
