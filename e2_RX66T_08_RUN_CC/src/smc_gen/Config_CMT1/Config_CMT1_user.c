@@ -85,7 +85,7 @@ static void r_Config_CMT1_cmi1_interrupt(void)
 	if(global_time_50u%10==1){
 		check_battery(&error);
 	}
-
+	previous_value=check_dist_velo(previous_value);
 	change_motor_velocity(mycommand_value,previous_value);
 	/* End user code. Do not edit comment generated here */
 }

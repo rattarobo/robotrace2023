@@ -44,9 +44,7 @@ Macro definitions
 #define _00000000_GPT4_INIT_COUNT                       (0x00000000UL) /* GPT4 initial counter value */
 #define _00007530_GPT4_COMP_MATCH_A_VALUE               (0x00007530UL) /* GPT4 compare match A value */
 #define _00007530_GPT4_COMP_MATCH_B_VALUE               (0x00007530UL) /* GPT4 compare match B value */
-#define _00000064_GPT4_COMP_MATCH_C_VALUE               (0x00000064UL) /* GPT4 compare match C value */
 #define _00000064_GPT4_COMP_MATCH_D_VALUE               (0x00000064UL) /* GPT4 compare match D value */
-#define _00000064_GPT4_COMP_MATCH_E_VALUE               (0x00000064UL) /* GPT4 compare match E value */
 #define _00000064_GPT4_COMP_MATCH_F_VALUE               (0x00000064UL) /* GPT4 compare match F value */
 
 /***********************************************************************************************************************
