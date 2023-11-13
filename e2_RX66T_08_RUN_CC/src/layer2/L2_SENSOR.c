@@ -52,8 +52,8 @@ _wheel reset={0.,0.,0.,0.};
 _wheel check_dist_velo(_wheel previous){//距離を求める
 	 _wheel temp;
 	 //距離を求める
-	 temp.distance[0]=(double)(l_enc* 12. / 42.*24*3.14159265358979/1000  / (400.*4));//距離=ギア比*カウント*タイヤ系/１回転当たりの信号量;左
-	 temp.distance[1]=(double)(r_enc* 12. / 42.*24*3.14159265358979/1000  / (400.*4));//距離=ギア比*カウント*タイヤ系/１回転当たりの信号量;右
+	 temp.distance[0]=(double)(l_enc* 12. / 42.*24/1000  *3.14159265358979/ (400.*4));//距離=ギア比*カウント*タイヤ系/１回転当たりの信号量;左
+	 temp.distance[1]=(double)(r_enc* 12. / 42.*24/1000  *3.14159265358979/ (400.*4));//距離=ギア比*カウント*タイヤ系/１回転当たりの信号量;右
 	 temp.distance[0]-=reset.distance[0];
 	 temp.distance[1]-=reset.distance[1];
 	 //速度を求める

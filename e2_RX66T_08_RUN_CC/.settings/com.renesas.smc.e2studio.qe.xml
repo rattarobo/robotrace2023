@@ -589,7 +589,7 @@
             <Setting id="S12AD0Mnt" value="Disable"/>
         </Segment>
         <Segment component="com.renesas.smc.tools.swcomponent.codegenerator.gpt" id="Config_GPT4" source="com.renesas.smc.tools.swcomponent.codegenerator.source">
-            <Setting id="GtccreOpt" value="CMatch"/>
+            <Setting id="GtccreOpt" value="BufReg"/>
             <Setting id="LnkGTCIESkpFun" value="Disable"/>
             <Setting id="CntSrc8_9Dn" value="Disable"/>
             <Setting id="CntSrc18Dn" value="Disable"/>
@@ -789,7 +789,7 @@
             <Setting id="CntSrc8_9ICA" value="Disable"/>
             <Setting id="CntSrc8_9ICB" value="Disable"/>
             <Setting id="CntSrc14_15Stp" value="Disable"/>
-            <Setting id="GtccrcOpt" value="CMatch"/>
+            <Setting id="GtccrcOpt" value="BufReg"/>
             <Setting id="CntSrc12_13Clr" value="Disable"/>
             <Setting id="GtccraNosFlt" value="Disable"/>
             <Setting id="GTCIVInt" value="Disable"/>

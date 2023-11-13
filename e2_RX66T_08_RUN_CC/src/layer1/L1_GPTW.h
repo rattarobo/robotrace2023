@@ -16,6 +16,6 @@ extern long l_enc,r_enc;
 
 
 
-void GPTW_PWM(unsigned long left_PWM,unsigned long right_PWM);
+void GPTW_PWM(long left_PWM,long right_PWM);
 void read_encorder(void);
 #endif /* LAYER1_L1_GPTW_H_ */
